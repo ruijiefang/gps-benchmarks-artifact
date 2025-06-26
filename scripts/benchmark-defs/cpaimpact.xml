@@ -1,12 +1,15 @@
 <?xml version="1.0"?>
-<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.18//EN" "https://www.sosy-lab.org/benchexec/benchmark-1.18.dtd">
-<benchmark tool="tools.gps"
-           displayName="gps"
-        memlimit="15 GB"
-		timelimit="15min">
-    <option name="-monotone" />
-    <option name="-cra-split-loops" />
-    <option name="-gps-gas" />
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
+<benchmark tool="tools.cpaimpact" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
+
+<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+
+  <resultfiles>**/witness.*</resultfiles>
+
+  <option name="--predicateAnalysis-ImpactRefiner-SBE"/>
+  <option name="-heap">10000M</option>
+  <option name="--benchmark"/>
+  <option name="--timelimit">900 s</option>
 
  <rundefinition name="SV-COMP24_unreach-call">
   <tasks name="Suite1-SVCOMP">
@@ -31,7 +34,11 @@
   </tasks>
 
 </rundefinition>
+  
+
+  <columns>
+    <column title="UsedConfig">Used algorithm property</column>
+  </columns>
 
 
 </benchmark>
-
