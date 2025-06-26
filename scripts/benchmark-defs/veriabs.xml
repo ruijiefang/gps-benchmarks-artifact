@@ -14,19 +14,19 @@
   </tasks>
   <tasks name="Suite2-SafeExamples">
     <includesfile>../Suite2.set</includesfile>
-    <propertyfile>../unreach-call.prp</propertyfile>
+    <propertyfile>../../properties/unreach-call.prp</propertyfile>
   </tasks>
   <tasks name="Suite3a-LockAndKey-Parametric">
           <includesfile>../Suite3a.set</includesfile>
-    <propertyfile>../unreach-call.prp</propertyfile>
+	  <propertyfile>../../properties/unreach-call.prp</propertyfile>
   </tasks>
   <tasks name="Suite3b-LockAndKey-NonParametric">
           <includesfile>../Suite3b.set</includesfile>
-    <propertyfile>../unreach-call.prp</propertyfile>
+	  <propertyfile>../../properties/unreach-call.prp</propertyfile>
   </tasks>
   <tasks name="Suite3c-LockAndKey-StateMachines">
           <includesfile>../Suite3c.set</includesfile>
-    <propertyfile>../unreach-call.prp</propertyfile>
+	  <propertyfile>../../properties/unreach-call.prp</propertyfile>
   </tasks>
 
 </rundefinition>
