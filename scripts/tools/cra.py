@@ -8,7 +8,7 @@ class Tool(benchexec.tools.template.BaseTool):
     """
 
     def executable(self):
-        return ("~/Projects/cav23/duet-IW/duet.exe")
+        return ("/gps-ae/duet-gps/duet.exe")
 
     def name(self):
         return "CRA"

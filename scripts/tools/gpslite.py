@@ -3,16 +3,12 @@ import benchexec.tools.template
 import benchexec.result as result
 
 class Tool(benchexec.tools.template.BaseTool):
-    """
-    Wrapper for CRA
-    """
 
     def executable(self):
-#        return ("/home/rjf/Projects/cav23/duet-IW/duet.exe")
-        return ("/home/rjf/Projects/cav23/duet-gps/duet/duet.exe")
+        return ("/gps-ae/duet-gps/duet.exe")
 
     def name(self):
-        return "gpsonlynogas"
+        return "gpslite"
 
     def determine_result(self, returncode, returnsignal, output, isTimeout):
         output = "\n".join(output)
