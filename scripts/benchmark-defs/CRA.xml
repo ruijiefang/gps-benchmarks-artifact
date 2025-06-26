@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.18//EN" "https://www.sosy-lab.org/benchexec/benchmark-1.18.dtd">
+<benchmark tool="tools.cra"
+           displayName="CRA"
+           timelimit="15min">
+    <option name="-monotone" />
+    <option name="-cra-split-loops" />
+    <option name="-monotone" />
+    <option name="-cra" />
+
+
+<rundefinition name="SV-COMP24_unreach-call">
+  <tasks name="Suite1-SVCOMP">
+          <includesfile>../Suite1.set</includesfile>
+    <propertyfile>../unreach-call.prp</propertyfile>
+  </tasks>
+  <tasks name="Suite2-SafeExamples">
+          <includesfile>../Suite2.set</includesfile>
+    <propertyfile>../unreach-call.prp</propertyfile>
+  </tasks>
+  <tasks name="Suite3a-LockAndKey-Parametric">
+          <includesfile>../Suite3a.set</includesfile>
+    <propertyfile>../unreach-call.prp</propertyfile>
+  </tasks>
+  <tasks name="Suite3b-LockAndKey-NonParametric">
+          <includesfile>../Suite3b.set</includesfile>
+    <propertyfile>../unreach-call.prp</propertyfile>
+  </tasks>
+  <tasks name="Suite3c-LockAndKey-StateMachines">
+          <includesfile>../Suite3c.set</includesfile>
+    <propertyfile>../unreach-call.prp</propertyfile>
+  </tasks>
+
+</rundefinition>
+
+</benchmark>
+

@@ -12,8 +12,6 @@ class Tool(benchexec.tools.template.BaseTool):
 
     def determine_result(self, returncode, returnsignal, output, isTimeout):
         output = "\n".join(output)
-#        print("output: ")
-#        print(output)
         if ((returnsignal == 9) or (returnsignal == 15)) and isTimeout:
             status = "TIMEOUT"
         elif returnsignal == 9:
