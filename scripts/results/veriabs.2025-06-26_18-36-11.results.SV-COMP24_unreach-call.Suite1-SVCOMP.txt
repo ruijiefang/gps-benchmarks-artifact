@@ -1,0 +1,40 @@
+   BENCHMARK INFORMATION
+benchmark definition:    benchmark-defs/veriabs.xml
+name:                    veriabs
+run sets:                SV-COMP24_unreach-call.Suite1-SVCOMP
+date:                    Thu, 2025-06-26 18:36:11 UTC
+tool:                    VeriAbs 1.6
+tool executable:         /gps-ae/VeriAbs/scripts/veriabs
+options:                 --sv22
+resource limits:
+- memory:                15000.0 MB
+- time:                  900 s
+- cpu cores:             4
+hardware requirements:
+- cpu model:             Intel Xeon E3-1230 v5 @ 3.40 GHz
+- cpu cores:             4
+- memory:                15000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ac8a6a12a11c
+os:                      Linux-6.8.0-60-generic-x86_64-with-glibc2.39
+cpu:                     13th Gen Intel Core i7-13700H
+- cores:                 20
+- max frequency:         4800.0 MHz
+- turbo boost enabled:   True
+ram:                     16421.941248 MB
+------------------------------------------------------------
+
+
+
+SV-COMP24_unreach-call.Suite1-SVCOMP
+Run set 1 of 1 with options '--sv22' and propertyfile 'None'
+
+inputfile                                                 status                       cpu time   wall time        host
+-----------------------------------------------------------------------------------------------------------------------
+loop-acceleration/const_1-1.yml                           ERROR                            7.94        3.19        None
+loop-acceleration/const_1-2.yml                           ERROR                            7.87        2.97        None
+loop-acceleration/const_1-2_abstracted.yml                false(unreach-call)              7.82        2.88        None
+loop-acceleration/diamond_1-1.yml                         ERROR                            7.97        2.96        None
+loop-acceleration/diamond_1-2.yml                         ERROR                            8.01        3.02        None
