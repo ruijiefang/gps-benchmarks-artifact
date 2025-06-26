@@ -34,13 +34,6 @@ table_end = "</table>"
 def run():
     for suite in suites:
         for tool in tools:
-            if replace_cached and has_result(tool,suite):
-                recent = recent_result(tool, suite)
-                os.remove(recent)
-
-            if cache and has_result(tool, suite):
-                print("Result of %s on suite %s is cached" % (tool, suite))
-            else:
                 print("Running %s on suite %s" % (tool, suite))
                 # Add bench dir to PYTHONPATH so benchexec can find the
                 # tool module
@@ -117,7 +110,7 @@ if __name__ == "__main__":
 
     command = sys.argv[1]
     opts = sys.argv[2:]
-    cache = False 
+    cache = False
     while(len(opts) > 0):
         if (opts[0] == "--timeout"):
             timeout = int(opts[1])
