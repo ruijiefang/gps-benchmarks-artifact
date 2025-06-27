@@ -8,6 +8,9 @@ tool=$1
 if [ -z "$1" ]; then
   echo "Error: need to specify a tool name as input."
   echo "usage: ./analyze-tool.sh <tool name>"
+  echo " Available tools: "
+  echo "  CRA gps gpsnogas gpsnogasnosum gpslite cpaimpact cpachecker veriabs symbiotic"
+  echo " (Please make sure XML file outputs for the corresponding tool exist in the results/ folder.)"
   exit 1
 fi
 
