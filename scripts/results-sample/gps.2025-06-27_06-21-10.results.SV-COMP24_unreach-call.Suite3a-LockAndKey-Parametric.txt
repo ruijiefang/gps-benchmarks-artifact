@@ -1,0 +1,97 @@
+   BENCHMARK INFORMATION
+gps
+benchmark definition:    benchmark-defs/gps.xml
+name:                    gps
+run sets:                SV-COMP24_unreach-call.Suite3a-LockAndKey-Parametric
+date:                    Fri, 2025-06-27 06:21:10 UTC
+tool:                    gps
+tool executable:         /gps-ae/duet-gps/duet.exe
+options:                 -monotone -cra-split-loops -gps-gas
+resource limits:
+- memory:                15000.0 MB
+- time:                  900 s
+- cpu cores:             6
+hardware requirements:
+- cpu cores:             6
+- memory:                15000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ac8a6a12a11c
+os:                      Linux-6.8.0-60-generic-x86_64-with-glibc2.39
+cpu:                     13th Gen Intel Core i7-13700H
+- cores:                 20
+- max frequency:         4800.0 MHz
+- turbo boost enabled:   True
+ram:                     16421.941248 MB
+------------------------------------------------------------
+
+
+
+SV-COMP24_unreach-call.Suite3a-LockAndKey-Parametric
+Run set 1 of 1 with options '-monotone -cra-split-loops -gps-gas' and propertyfile 'None'
+
+inputfile                      status                       cpu time   wall time        host
+--------------------------------------------------------------------------------------------
+ccbse-refute1-100.yml          false                            0.18        0.16        None
+ccbse-refute1-1000.yml         false                            0.65        0.66        None
+ccbse-refute1-10000.yml        false                            0.18        0.18        None
+ccbse-refute1-2000.yml         false                            0.63        0.63        None
+ccbse-refute1-250.yml          false                            0.18        0.18        None
+ccbse-refute1-3000.yml         false                            0.18        0.18        None
+ccbse-refute1-500.yml          false                            0.63        0.64        None
+ccbse-refute1-5000.yml         false                            0.19        0.18        None
+ccbse-refute1-77.yml           false                            0.20        0.20        None
+ccbse-refute1-8000.yml         false                            0.18        0.18        None
+ccbse-refute2-100.yml          false                            0.20        0.19        None
+ccbse-refute2-1000.yml         false                            0.19        0.18        None
+ccbse-refute2-10000.yml        false                            0.18        0.18        None
+ccbse-refute2-2000.yml         false                            0.19        0.19        None
+ccbse-refute2-250.yml          false                            0.19        0.19        None
+ccbse-refute2-3000.yml         false                            0.18        0.19        None
+ccbse-refute2-37.yml           false                            0.19        0.19        None
+ccbse-refute2-500.yml          false                            0.18        0.18        None
+ccbse-refute2-5000.yml         false                            0.18        0.18        None
+ccbse-refute2-8000.yml         false                            0.19        0.19        None
+godfroid-issta-1a-100.yml      false                            0.15        0.14        None
+godfroid-issta-1a-1000.yml     false                            0.16        0.16        None
+godfroid-issta-1a-10000.yml    false                            0.31        0.30        None
+godfroid-issta-1a-2000.yml     false                            0.17        0.16        None
+godfroid-issta-1a-250.yml      false                            0.15        0.14        None
+godfroid-issta-1a-3000.yml     false                            0.19        0.18        None
+godfroid-issta-1a-50.yml       false                            0.14        0.14        None
+godfroid-issta-1a-500.yml      false                            0.15        0.15        None
+godfroid-issta-1a-5000.yml     false                            0.22        0.21        None
+godfroid-issta-1a-8000.yml     false                            0.27        0.26        None
+godfroid-issta-1b-100.yml      false                            0.15        0.14        None
+godfroid-issta-1b-1000.yml     false                            0.16        0.16        None
+godfroid-issta-1b-10000.yml    false                            0.30        0.30        None
+godfroid-issta-1b-2000.yml     false                            0.17        0.17        None
+godfroid-issta-1b-250.yml      false                            0.15        0.15        None
+godfroid-issta-1b-30.yml       false                            0.14        0.14        None
+godfroid-issta-1b-3000.yml     false                            0.19        0.19        None
+godfroid-issta-1b-500.yml      false                            0.15        0.16        None
+godfroid-issta-1b-5000.yml     false                            0.22        0.22        None
+godfroid-issta-1b-8000.yml     false                            0.27        0.26        None
+lese10.yml                     false                            0.14        0.14        None
+lese100.yml                    false                            0.14        0.14        None
+lese1000.yml                   false                            0.14        0.15        None
+lese100000.yml                 false                            0.14        0.14        None
+lese250.yml                    false                            0.14        0.14        None
+lese2500.yml                   false                            0.14        0.14        None
+lese50.yml                     false                            0.15        0.15        None
+lese500.yml                    false                            0.14        0.15        None
+lese5000.yml                   false                            0.14        0.14        None
+lese8000.yml                   false                            0.14        0.14        None
+--------------------------------------------------------------------------------------------
+Run set 1                      done                            10.29       15.31           -
+
+Statistics:             50 Files
+  correct:              50
+    correct true:        0
+    correct false:      50
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               0
+  Score:                50 (max: 50)

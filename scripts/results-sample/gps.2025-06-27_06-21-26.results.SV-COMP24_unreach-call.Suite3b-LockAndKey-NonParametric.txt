@@ -1,0 +1,48 @@
+   BENCHMARK INFORMATION
+gps
+benchmark definition:    benchmark-defs/gps.xml
+name:                    gps
+run sets:                SV-COMP24_unreach-call.Suite3b-LockAndKey-NonParametric
+date:                    Fri, 2025-06-27 06:21:26 UTC
+tool:                    gps
+tool executable:         /gps-ae/duet-gps/duet.exe
+options:                 -monotone -cra-split-loops -gps-gas
+resource limits:
+- memory:                15000.0 MB
+- time:                  900 s
+- cpu cores:             6
+hardware requirements:
+- cpu cores:             6
+- memory:                15000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ac8a6a12a11c
+os:                      Linux-6.8.0-60-generic-x86_64-with-glibc2.39
+cpu:                     13th Gen Intel Core i7-13700H
+- cores:                 20
+- max frequency:         4800.0 MHz
+- turbo boost enabled:   True
+ram:                     16421.941248 MB
+------------------------------------------------------------
+
+
+
+SV-COMP24_unreach-call.Suite3b-LockAndKey-NonParametric
+Run set 1 of 1 with options '-monotone -cra-split-loops -gps-gas' and propertyfile 'None'
+
+inputfile                   status                       cpu time   wall time        host
+-----------------------------------------------------------------------------------------
+godfroid-issta-2-101.yml    false                            0.18        0.16        None
+-----------------------------------------------------------------------------------------
+Run set 1                   done                             0.18        0.26           -
+
+Statistics:              1 Files
+  correct:               1
+    correct true:        0
+    correct false:       1
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               0
+  Score:                 1 (max: 1)

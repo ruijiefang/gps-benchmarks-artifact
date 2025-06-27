@@ -1,0 +1,79 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loop-zilu/benchmark05_conjunctive.i
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 30 is loop header
+changing 30->34 to 30->54->34
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 5
+visiting vertex 6
+visiting vertex 7
+visiting vertex 8
+visiting vertex 9
+visiting vertex 11
+visiting vertex 12
+visiting vertex 14
+visiting vertex 15
+visiting vertex 17
+visiting vertex 18
+visiting vertex 19
+visiting vertex 20
+visiting vertex 21
+visiting vertex 22
+visiting vertex 23
+visiting vertex 24
+visiting vertex 25
+visiting vertex 26
+visiting vertex 27
+visiting vertex 28
+visiting vertex 29
+visiting vertex 30
+visiting vertex 31
+visiting vertex 33
+visiting vertex 34
+visiting vertex 35
+visiting vertex 36
+visiting vertex 37
+visiting vertex 38
+visiting vertex 39
+visiting vertex 40
+visiting vertex 41
+visiting vertex 42
+visiting vertex 43
+visiting vertex 44
+visiting vertex 45
+visiting vertex 47
+visiting vertex 48
+trying rtc on vertex 48
+ visiting vertex 49
+visiting vertex 50
+visiting vertex 51
+trying rtc on vertex 51
+ visiting vertex 52
+trying rtc on vertex 52
+ visiting vertex 53
+visiting vertex 54
+trying rtc on vertex 54
+ removing edge from 54 54
+success: contracting vertex 54 -1
+visiting vertex 48
+trying rtc on vertex 48
+ visiting vertex 51
+trying rtc on vertex 51
+ visiting vertex 52
+trying rtc on vertex 52
+ visiting vertex 54
+visiting vertex 48
+trying rtc on vertex 48
+ visiting vertex 51
+trying rtc on vertex 51
+ visiting vertex 52
+trying rtc on vertex 52
+ testing reachability of location 53
+------------------------------
+  proven safe
+------------------------------

@@ -1,0 +1,51 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loops/while_infinite_loop_3.c
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 2 is loop header
+changing 2->3 to 2->28->3
+ --- 24 is call edge
+changing 3->24 to 3->29->24
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+trying rtc on vertex 4
+ visiting vertex 5
+visiting vertex 11
+visiting vertex 22
+trying rtc on vertex 22
+ visiting vertex 23
+visiting vertex 24
+visiting vertex 26
+trying rtc on vertex 26
+ visiting vertex 27
+visiting vertex 28
+visiting vertex 29
+visiting vertex 4
+trying rtc on vertex 4
+ visiting vertex 22
+trying rtc on vertex 22
+ visiting vertex 23
+visiting vertex 24
+visiting vertex 26
+trying rtc on vertex 26
+ visiting vertex 12
+visiting vertex 13
+visiting vertex 14
+visiting vertex 18
+visiting vertex 19
+visiting vertex 20
+visiting vertex 21
+trying rtc on vertex 21
+ visiting vertex 25
+trying rtc on vertex 25
+ visiting vertex 21
+trying rtc on vertex 21
+ visiting vertex 25
+trying rtc on vertex 25
+ testing reachability of location 31
+------------------------------
+  proven safe
+------------------------------

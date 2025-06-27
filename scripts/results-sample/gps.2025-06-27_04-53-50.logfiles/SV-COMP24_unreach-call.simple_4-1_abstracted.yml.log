@@ -1,0 +1,36 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loop-acceleration/simple_4-1_abstracted.c
+
+
+--------------------------------------------------------------------------------
+
+
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 5
+visiting vertex 6
+visiting vertex 7
+visiting vertex 8
+visiting vertex 9
+visiting vertex 10
+visiting vertex 11
+visiting vertex 12
+trying rtc on vertex 12
+ visiting vertex 13
+visiting vertex 14
+visiting vertex 15
+trying rtc on vertex 15
+ visiting vertex 16
+trying rtc on vertex 16
+ visiting vertex 17
+visiting vertex 12
+trying rtc on vertex 12
+ visiting vertex 15
+trying rtc on vertex 15
+ visiting vertex 16
+trying rtc on vertex 16
+ testing reachability of location 17
+------------------------------
+  proven unsafe
+------------------------------
+../suite1-svcomp/loop-acceleration/simple_4-1_abstracted.c:37: Warning: Body of function main falls-through. Adding a return statement

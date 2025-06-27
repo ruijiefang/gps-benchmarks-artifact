@@ -1,0 +1,52 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loop-acceleration/simple_2-1.c
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 5 is loop header
+changing 5->9 to 5->23->9
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 5
+visiting vertex 6
+visiting vertex 8
+visiting vertex 9
+visiting vertex 10
+visiting vertex 11
+visiting vertex 12
+visiting vertex 13
+visiting vertex 14
+visiting vertex 16
+visiting vertex 17
+trying rtc on vertex 17
+ visiting vertex 18
+visiting vertex 19
+visiting vertex 20
+trying rtc on vertex 20
+ visiting vertex 21
+trying rtc on vertex 21
+ visiting vertex 22
+visiting vertex 23
+trying rtc on vertex 23
+ removing edge from 23 23
+success: contracting vertex 23 -1
+visiting vertex 17
+trying rtc on vertex 17
+ visiting vertex 20
+trying rtc on vertex 20
+ visiting vertex 21
+trying rtc on vertex 21
+ visiting vertex 23
+visiting vertex 17
+trying rtc on vertex 17
+ visiting vertex 20
+trying rtc on vertex 20
+ visiting vertex 21
+trying rtc on vertex 21
+ testing reachability of location 22
+------------------------------
+  proven safe
+------------------------------
+../suite1-svcomp/loop-acceleration/simple_2-1.c:20: Warning: Body of function main falls-through. Adding a return statement

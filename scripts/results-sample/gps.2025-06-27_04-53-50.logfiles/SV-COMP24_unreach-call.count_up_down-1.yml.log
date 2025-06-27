@@ -1,0 +1,55 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loops/count_up_down-1.c
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 7 is loop header
+changing 7->11 to 7->26->11
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 5
+visiting vertex 6
+visiting vertex 7
+visiting vertex 8
+visiting vertex 10
+visiting vertex 11
+visiting vertex 12
+visiting vertex 13
+visiting vertex 14
+visiting vertex 15
+visiting vertex 16
+visiting vertex 17
+visiting vertex 19
+visiting vertex 20
+trying rtc on vertex 20
+ visiting vertex 21
+visiting vertex 22
+visiting vertex 23
+trying rtc on vertex 23
+ visiting vertex 24
+trying rtc on vertex 24
+ visiting vertex 25
+visiting vertex 26
+trying rtc on vertex 26
+ removing edge from 26 26
+success: contracting vertex 26 -1
+visiting vertex 20
+trying rtc on vertex 20
+ visiting vertex 23
+trying rtc on vertex 23
+ visiting vertex 24
+trying rtc on vertex 24
+ visiting vertex 26
+visiting vertex 20
+trying rtc on vertex 20
+ visiting vertex 23
+trying rtc on vertex 23
+ visiting vertex 24
+trying rtc on vertex 24
+ testing reachability of location 25
+------------------------------
+  proven safe
+------------------------------
+../suite1-svcomp/loops/count_up_down-1.c:22: Warning: Body of function main falls-through. Adding a return statement

@@ -1,0 +1,127 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loops-crafted-1/in-de52.c
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 60 is loop header
+changing 60->64 to 60->79->64
+ --- 47 is loop header
+changing 47->51 to 47->80->51
+ --- 34 is loop header
+changing 34->38 to 34->81->38
+ --- 21 is loop header
+changing 21->25 to 21->82->25
+ --- 7 is loop header
+changing 7->11 to 7->83->11
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 5
+visiting vertex 6
+visiting vertex 7
+visiting vertex 8
+visiting vertex 10
+visiting vertex 11
+visiting vertex 12
+visiting vertex 13
+visiting vertex 14
+visiting vertex 15
+visiting vertex 16
+visiting vertex 17
+visiting vertex 19
+visiting vertex 20
+visiting vertex 21
+visiting vertex 22
+visiting vertex 24
+visiting vertex 25
+visiting vertex 26
+visiting vertex 27
+visiting vertex 28
+visiting vertex 29
+visiting vertex 30
+visiting vertex 31
+visiting vertex 33
+visiting vertex 34
+visiting vertex 35
+visiting vertex 37
+visiting vertex 38
+visiting vertex 39
+visiting vertex 40
+visiting vertex 41
+visiting vertex 42
+visiting vertex 43
+visiting vertex 44
+visiting vertex 46
+visiting vertex 47
+visiting vertex 48
+visiting vertex 50
+visiting vertex 51
+visiting vertex 52
+visiting vertex 53
+visiting vertex 54
+visiting vertex 55
+visiting vertex 56
+visiting vertex 57
+visiting vertex 59
+visiting vertex 60
+visiting vertex 61
+visiting vertex 63
+visiting vertex 64
+visiting vertex 65
+visiting vertex 66
+visiting vertex 67
+visiting vertex 68
+visiting vertex 69
+visiting vertex 70
+visiting vertex 72
+visiting vertex 73
+trying rtc on vertex 73
+ visiting vertex 74
+visiting vertex 75
+visiting vertex 76
+trying rtc on vertex 76
+ visiting vertex 77
+trying rtc on vertex 77
+ visiting vertex 78
+visiting vertex 79
+trying rtc on vertex 79
+ removing edge from 79 79
+success: contracting vertex 79 -1
+visiting vertex 80
+trying rtc on vertex 80
+ removing edge from 80 80
+success: contracting vertex 80 -1
+visiting vertex 81
+trying rtc on vertex 81
+ removing edge from 81 81
+success: contracting vertex 81 -1
+visiting vertex 82
+trying rtc on vertex 82
+ removing edge from 82 82
+success: contracting vertex 82 -1
+visiting vertex 83
+trying rtc on vertex 83
+ removing edge from 83 83
+success: contracting vertex 83 -1
+visiting vertex 73
+trying rtc on vertex 73
+ visiting vertex 76
+trying rtc on vertex 76
+ visiting vertex 77
+trying rtc on vertex 77
+ visiting vertex 79
+visiting vertex 80
+visiting vertex 81
+visiting vertex 82
+visiting vertex 83
+visiting vertex 73
+trying rtc on vertex 73
+ visiting vertex 76
+trying rtc on vertex 76
+ visiting vertex 77
+trying rtc on vertex 77
+ testing reachability of location 78
+------------------------------
+  proven safe
+------------------------------

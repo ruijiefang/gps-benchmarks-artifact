@@ -1,0 +1,277 @@
+   BENCHMARK INFORMATION
+gps
+benchmark definition:    benchmark-defs/gps.xml
+name:                    gps
+run sets:                SV-COMP24_unreach-call.Suite1-SVCOMP
+date:                    Fri, 2025-06-27 04:53:50 UTC
+tool:                    gps
+tool executable:         /gps-ae/duet-gps/duet.exe
+options:                 -monotone -cra-split-loops -gps-gas
+resource limits:
+- memory:                15000.0 MB
+- time:                  900 s
+- cpu cores:             6
+hardware requirements:
+- cpu cores:             6
+- memory:                15000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ac8a6a12a11c
+os:                      Linux-6.8.0-60-generic-x86_64-with-glibc2.39
+cpu:                     13th Gen Intel Core i7-13700H
+- cores:                 20
+- max frequency:         4800.0 MHz
+- turbo boost enabled:   True
+ram:                     16421.941248 MB
+------------------------------------------------------------
+
+
+
+SV-COMP24_unreach-call.Suite1-SVCOMP
+Run set 1 of 1 with options '-monotone -cra-split-loops -gps-gas' and propertyfile 'None'
+
+inputfile                                                 status                       cpu time   wall time        host
+-----------------------------------------------------------------------------------------------------------------------
+loop-acceleration/const_1-1.yml                           true                             0.13        0.12        None
+loop-acceleration/const_1-2.yml                           false                            0.29        0.29        None
+loop-acceleration/const_1-2_abstracted.yml                false                            0.14        0.13        None
+loop-acceleration/diamond_1-1.yml                         true                             0.15        0.13        None
+loop-acceleration/diamond_1-2.yml                         false                            0.16        0.16        None
+loop-acceleration/diamond_2-2.yml                         true                             0.36        0.36        None
+loop-acceleration/functions_1-1.yml                       true                             0.25        0.21        None
+loop-acceleration/functions_1-2.yml                       KILLED                          74.13       74.17        None
+loop-acceleration/multivar_1-1.yml                        true                             0.14        0.19        None
+loop-acceleration/multivar_1-2.yml                        false                            0.15        0.14        None
+loop-acceleration/nested_1-1.yml                          true                             0.14        0.13        None
+loop-acceleration/nested_1-2.yml                          KILLED                         242.32      242.35        None
+loop-acceleration/overflow_1-1.yml                        true                             0.14        0.14        None
+loop-acceleration/phases_1-1.yml                          true                             0.15        0.14        None
+loop-acceleration/phases_1-2.yml                          false                            0.16        0.15        None
+loop-acceleration/phases_2-1.yml                          false                            0.22        0.22        None
+loop-acceleration/simple_1-1.yml                          false                            0.14        0.13        None
+loop-acceleration/simple_1-1_abstracted.yml               false                            0.14        0.14        None
+loop-acceleration/simple_1-2.yml                          true                             0.13        0.13        None
+loop-acceleration/simple_1-2_abstracted.yml               true                             0.13        0.12        None
+loop-acceleration/simple_2-1.yml                          true                             0.13        0.13        None
+loop-acceleration/simple_2-1_abstracted.yml               true                             0.13        0.13        None
+loop-acceleration/simple_2-2.yml                          false                            0.14        0.13        None
+loop-acceleration/simple_3-1.yml                          false                            0.26        0.22        None
+loop-acceleration/simple_3-2.yml                          true                             0.23        0.21        None
+loop-acceleration/simple_4-1.yml                          false                            0.14        0.13        None
+loop-acceleration/simple_4-1_abstracted.yml               false                            0.14        0.13        None
+loop-acceleration/simple_4-2.yml                          true                             0.13        0.13        None
+loop-acceleration/simple_4-2_abstracted.yml               true                             0.13        0.11        None
+loop-acceleration/underapprox_1-1.yml                     false                            0.15        0.14        None
+loop-acceleration/underapprox_1-2.yml                     true                             0.16        0.16        None
+loop-acceleration/underapprox_2-1.yml                     false                            0.15        0.14        None
+loop-acceleration/underapprox_2-2.yml                     true                             0.13        0.12        None
+loop-crafted/simple_vardep_1.yml                          true                             0.14        0.12        None
+loop-crafted/simple_vardep_2.yml                          true                             0.14        0.13        None
+loop-industry-pattern/mod3.c.v+cfa-reducer.yml            true                             0.24        0.23        None
+loop-industry-pattern/mod3.c.v+lhb-reducer.yml            true                             1.19        1.19        None
+loop-industry-pattern/mod3.c.v+sep-reducer.yml            true                             1.30        1.29        None
+loop-industry-pattern/mod3.yml                            true                             0.19        0.19        None
+loop-invariants/const.yml                                 true                             0.16        0.14        None
+loop-invariants/eq1.yml                                   true                             0.14        0.13        None
+loop-invariants/eq2.yml                                   true                             0.13        0.13        None
+loop-invariants/even.yml                                  true                             0.13        0.13        None
+loop-invariants/linear-inequality-inv-a.yml               KILLED                         399.48      399.31        None
+loop-invariants/linear-inequality-inv-b.yml               KILLED                         398.60      398.43        None
+loop-invariants/mod4.yml                                  true                             0.13        0.13        None
+loop-invariants/odd.yml                                   true                             0.15        0.14        None
+loop-invgen/MADWiFi-encode_ie_ok.yml                      true                             0.14        0.13        None
+loop-invgen/NetBSD_loop.yml                               true                             0.13        0.14        None
+loop-invgen/SpamAssassin-loop.i.v+cfa-reducer.yml         true                             4.56        4.56        None
+loop-invgen/SpamAssassin-loop.yml                         true                             0.57        0.57        None
+loop-invgen/apache-escape-absolute.i.v+cfa-reducer.yml    true                             0.26        0.26        None
+loop-invgen/apache-escape-absolute.yml                    true                             0.23        0.23        None
+loop-invgen/apache-get-tag.i.p+lhb-reducer.yml            true                             2.54        2.53        None
+loop-invgen/apache-get-tag.i.p+nlh-reducer.yml            true                           478.32      478.33        None
+loop-invgen/apache-get-tag.i.p+sep-reducer.yml            KILLED                         303.12      303.11        None
+loop-invgen/apache-get-tag.i.v+lhb-reducer.yml            true                             0.51        0.50        None
+loop-invgen/apache-get-tag.i.v+nlh-reducer.yml            true                             0.55        0.54        None
+loop-invgen/apache-get-tag.yml                            true                             0.51        0.50        None
+loop-invgen/down.yml                                      true                             0.13        0.13        None
+loop-invgen/fragtest_simple.yml                           true                             0.14        0.15        None
+loop-invgen/half_2.yml                                    true                             0.14        0.14        None
+loop-invgen/heapsort.yml                                  true                             8.74        8.74        None
+loop-invgen/id_build.i.p+nlh-reducer.yml                  true                             4.22        4.19        None
+loop-invgen/id_build.i.p+sep-reducer.yml                  true                             4.25        4.23        None
+loop-invgen/id_build.i.v+lhb-reducer.yml                  true                             0.21        0.21        None
+loop-invgen/id_build.yml                                  true                             0.16        0.15        None
+loop-invgen/id_trans.yml                                  false                            0.16        0.17        None
+loop-invgen/large_const.yml                               true                             0.16        0.16        None
+loop-invgen/nest-if3.yml                                  true                             0.17        0.17        None
+loop-invgen/nested6.yml                                   true                             2.25        2.25        None
+loop-invgen/nested9.yml                                   TIMEOUT                        600.98      601.02        None
+loop-invgen/sendmail-close-angle.yml                      KILLED                          70.55       70.54        None
+loop-invgen/seq-3.yml                                     true                             0.14        0.13        None
+loop-invgen/string_concat-noarr.yml                       true                             0.14        0.14        None
+loop-invgen/up.yml                                        true                             0.13        0.14        None
+loop-lit/afnp2014.yml                                     KILLED                         461.56      461.37        None
+loop-lit/as2013-hybrid.yml                                true                             0.15        0.15        None
+loop-lit/bh2017-ex-add.yml                                true                             0.18        0.18        None
+loop-lit/bh2017-ex1-poly.yml                              true                             0.18        0.17        None
+loop-lit/bh2017-ex3.yml                                   true                             0.16        0.17        None
+loop-lit/bhmr2007.yml                                     true                             0.14        0.13        None
+loop-lit/cggmp2005.yml                                    true                             0.13        0.13        None
+loop-lit/cggmp2005_variant.yml                            true                             0.13        0.13        None
+loop-lit/cggmp2005b.yml                                   true                             0.14        0.13        None
+loop-lit/css2003.yml                                      true                             0.16        0.15        None
+loop-lit/ddlm2013.yml                                     true                             0.77        0.78        None
+loop-lit/gcnr2008.yml                                     false                            0.20        0.20        None
+loop-lit/gj2007.c.i.p+lhb-reducer.yml                     true                             0.16        0.16        None
+loop-lit/gj2007.c.i.p+nlh-reducer.yml                     true                             0.57        0.56        None
+loop-lit/gj2007.yml                                       true                             0.14        0.14        None
+loop-lit/gj2007b.yml                                      KILLED                          63.83       63.85        None
+loop-lit/gr2006.yml                                       true                             0.15        0.13        None
+loop-lit/gsv2008.c.i.p+cfa-reducer.yml                    true                             0.13        0.14        None
+loop-lit/gsv2008.c.i.v+cfa-reducer.yml                    true                             0.14        0.14        None
+loop-lit/gsv2008.c.i.v+lhb-reducer.yml                    true                             0.14        0.14        None
+loop-lit/gsv2008.yml                                      true                             0.13        0.13        None
+loop-lit/hh2012-ex1b.yml                                  true                             0.16        0.16        None
+loop-lit/hh2012-ex2b.yml                                  true                             0.13        0.13        None
+loop-lit/hh2012-ex3.yml                                   true                             0.16        0.16        None
+loop-lit/hhk2008.yml                                      true                             0.13        0.12        None
+loop-lit/jm2006.c.i.v+cfa-reducer.yml                     true                             0.14        0.13        None
+loop-lit/jm2006.yml                                       true                             0.13        0.13        None
+loop-lit/jm2006_variant.yml                               true                             0.14        0.13        None
+loop-lit/mine2017-ex4.10.yml                              true                             0.13        0.13        None
+loop-lit/mine2017-ex4.6.yml                               true                             0.13        0.13        None
+loop-lit/mine2017-ex4.7.yml                               true                             0.13        0.14        None
+loop-lit/mine2017-ex4.8.yml                               true                             0.13        0.13        None
+loop-new/count_by_1.yml                                   true                             0.13        0.13        None
+loop-new/count_by_1_variant.yml                           true                             0.13        0.13        None
+loop-new/count_by_2.yml                                   true                             0.13        0.13        None
+loop-new/count_by_k.yml                                   KILLED                         175.19      175.21        None
+loop-new/count_by_nondet.yml                              KILLED                         383.78      383.84        None
+loop-new/half.yml                                         KILLED                          77.68       77.67        None
+loop-new/nested-1.yml                                     true                             3.50        3.50        None
+loops/count_up_down-1.yml                                 true                             0.13        0.14        None
+loops/count_up_down-2.yml                                 false                            0.14        0.13        None
+loops/for_bounded_loop1.yml                               false                            0.17        0.17        None
+loops/for_infinite_loop_1.yml                             true                             0.13        0.13        None
+loops/for_infinite_loop_2.yml                             true                             0.13        0.13        None
+loops/sum01-2.yml                                         true                             0.13        0.13        None
+loops/sum01_bug02.yml                                     false                            0.16        0.16        None
+loops/sum03-1.yml                                         false                            2.11        2.10        None
+loops/sum03-2.yml                                         true                             0.13        0.14        None
+loops/sum04-1.yml                                         false                            0.15        0.15        None
+loops/sum04-2.yml                                         true                             0.12        0.12        None
+loops/terminator_02-2.yml                                 true                             0.14        0.13        None
+loops/terminator_02-2_abstracted.yml                      true                             0.13        0.13        None
+loops/terminator_03-2.yml                                 true                             0.13        0.14        None
+loops/terminator_03-2_abstracted.yml                      true                             0.13        0.13        None
+loops/trex01-1.yml                                        false                            0.28        0.25        None
+loops/trex01-2.yml                                        true                             0.25        0.22        None
+loops/trex02-1.yml                                        true                             0.24        0.21        None
+loops/trex02-2.yml                                        false                            0.27        0.25        None
+loops/trex03-1.yml                                        false                            0.19        0.18        None
+loops/trex03-2.yml                                        true                             0.16        0.16        None
+loops/trex03-2_abstracted.yml                             true                             0.13        0.13        None
+loops/trex04.yml                                          true                             0.24        0.22        None
+loops/trex04_abstracted.yml                               true                             0.24        0.21        None
+loops/while_infinite_loop_1.yml                           true                             0.13        0.12        None
+loops/while_infinite_loop_2.yml                           true                             0.14        0.13        None
+loops/while_infinite_loop_3.yml                           true                             0.23        0.20        None
+loops/while_infinite_loop_4.yml                           KILLED                         255.09      255.11        None
+loops-crafted-1/Mono1_1-1.yml                             false                            0.16        0.15        None
+loops-crafted-1/Mono1_1-2.yml                             true                             0.15        0.15        None
+loops-crafted-1/Mono3_1.yml                               false                            0.16        0.15        None
+loops-crafted-1/Mono4_1.yml                               false                            0.16        0.15        None
+loops-crafted-1/Mono5_1.yml                               false                            0.16        0.16        None
+loops-crafted-1/Mono6_1.yml                               false                            0.16        0.16        None
+loops-crafted-1/iftelse.yml                               true                             1.32        1.32        None
+loops-crafted-1/in-de20.yml                               true                             0.14        0.13        None
+loops-crafted-1/in-de31.yml                               true                             0.13        0.13        None
+loops-crafted-1/in-de32.yml                               true                             0.14        0.13        None
+loops-crafted-1/in-de41.yml                               true                             0.14        0.13        None
+loops-crafted-1/in-de42.yml                               true                             0.14        0.14        None
+loops-crafted-1/in-de51.yml                               true                             0.14        0.15        None
+loops-crafted-1/in-de52.yml                               true                             0.14        0.14        None
+loops-crafted-1/in-de61.yml                               true                             0.15        0.14        None
+loops-crafted-1/in-de62.yml                               true                             0.15        0.14        None
+loops-crafted-1/loopv1.yml                                true                             0.16        0.16        None
+loops-crafted-1/loopv2.yml                                true                             0.14        0.13        None
+loops-crafted-1/loopv3.yml                                KILLED                          95.88       95.88        None
+loops-crafted-1/mono-crafted_1.yml                        true                             0.15        0.14        None
+loops-crafted-1/mono-crafted_10.yml                       true                             0.14        0.14        None
+loops-crafted-1/mono-crafted_11.yml                       true                             0.15        0.13        None
+loops-crafted-1/mono-crafted_12.yml                       true                             0.14        0.14        None
+loops-crafted-1/mono-crafted_13.yml                       true                             0.15        0.15        None
+loops-crafted-1/mono-crafted_14.yml                       true                             0.15        0.14        None
+loops-crafted-1/mono-crafted_3.yml                        true                             0.15        0.16        None
+loops-crafted-1/mono-crafted_6.yml                        true                             0.15        0.15        None
+loops-crafted-1/mono-crafted_7.yml                        true                             0.15        0.15        None
+loops-crafted-1/mono-crafted_8.yml                        true                             0.14        0.14        None
+loops-crafted-1/mono-crafted_9.yml                        true                             0.15        0.14        None
+loops-crafted-1/nested3-1.yml                             true                             0.17        0.17        None
+loops-crafted-1/nested3-1_abstracted.yml                  true                             0.19        0.19        None
+loops-crafted-1/nested3-2.yml                             false                            0.15        0.15        None
+loops-crafted-1/nested3-2_abstracted.yml                  false                            0.15        0.14        None
+loops-crafted-1/nested5-1.yml                             true                             0.38        0.38        None
+loops-crafted-1/nested5-2.yml                             false                            0.18        0.18        None
+loops-crafted-1/nested_delay_nd.yml                       KILLED                         230.22      230.25        None
+loops-crafted-1/nested_delay_notd2.yml                    TIMEOUT                        601.13      601.17        None
+loops-crafted-1/net_reset.yml                             true                             0.29        0.26        None
+loops-crafted-1/sum_by_3.yml                              true                             0.14        0.14        None
+loops-crafted-1/sum_by_3_abstracted.yml                   true                             0.14        0.13        None
+loops-crafted-1/sumt2.yml                                 true                             0.18        0.18        None
+loops-crafted-1/sumt3.yml                                 true                             0.17        0.16        None
+loops-crafted-1/sumt4.yml                                 true                             0.20        0.21        None
+loops-crafted-1/sumt5.yml                                 true                             0.24        0.23        None
+loops-crafted-1/sumt6.yml                                 true                             0.43        0.42        None
+loops-crafted-1/sumt7.yml                                 true                             0.39        0.38        None
+loops-crafted-1/sumt8.yml                                 true                             0.50        0.50        None
+loops-crafted-1/sumt9.yml                                 true                             0.73        0.73        None
+loops-crafted-1/theatreSquare.yml                         KILLED                          19.34       19.33        None
+loops-crafted-1/vnew1.yml                                 true                             0.18        0.19        None
+loops-crafted-1/vnew2.yml                                 true                             0.16        0.15        None
+loops-crafted-1/watermelon.yml                            true                             0.25        0.22        None
+loop-simple/deep-nested.yml                               KILLED                         207.66      207.70        None
+loop-simple/nested_1.yml                                  true                             0.13        0.13        None
+loop-simple/nested_1b.yml                                 false                            0.14        0.14        None
+loop-simple/nested_2.yml                                  true                             0.14        0.13        None
+loop-simple/nested_3.yml                                  true                             0.15        0.15        None
+loop-simple/nested_4.yml                                  true                             0.16        0.15        None
+loop-simple/nested_5.yml                                  true                             0.17        0.17        None
+loop-simple/nested_6.yml                                  true                             0.21        0.21        None
+loop-zilu/benchmark02_linear.yml                          true                             0.13        0.13        None
+loop-zilu/benchmark02_linear_abstracted.yml               true                             0.12        0.12        None
+loop-zilu/benchmark04_conjunctive.yml                     true                             0.13        0.13        None
+loop-zilu/benchmark05_conjunctive.yml                     true                             0.15        0.14        None
+loop-zilu/benchmark09_conjunctive.yml                     true                             0.13        0.13        None
+loop-zilu/benchmark10_conjunctive.yml                     true                             0.13        0.12        None
+loop-zilu/benchmark11_linear.yml                          true                             0.13        0.12        None
+loop-zilu/benchmark11_linear_abstracted.yml               true                             0.13        0.13        None
+loop-zilu/benchmark14_linear.yml                          true                             0.13        0.12        None
+loop-zilu/benchmark17_conjunctive.yml                     true                             0.13        0.12        None
+loop-zilu/benchmark18_conjunctive.yml                     true                             0.13        0.13        None
+loop-zilu/benchmark19_conjunctive.yml                     true                             0.13        0.13        None
+loop-zilu/benchmark20_conjunctive.yml                     true                             0.14        0.13        None
+loop-zilu/benchmark23_conjunctive.yml                     true                             0.13        0.12        None
+loop-zilu/benchmark25_linear.yml                          true                             0.13        0.12        None
+loop-zilu/benchmark25_linear_abstracted.yml               true                             0.12        0.12        None
+loop-zilu/benchmark26_linear.yml                          true                             0.13        0.12        None
+loop-zilu/benchmark26_linear_abstracted.yml               true                             0.13        0.14        None
+loop-zilu/benchmark32_linear.yml                          true                             0.37        0.38        None
+loop-zilu/benchmark33_linear.yml                          true                             0.13        0.12        None
+loop-zilu/benchmark34_conjunctive.yml                     true                             0.13        0.13        None
+loop-zilu/benchmark35_linear.yml                          true                             0.13        0.13        None
+loop-zilu/benchmark37_conjunctive.yml                     true                             0.13        0.12        None
+loop-zilu/benchmark43_conjunctive.yml                     true                             0.13        0.13        None
+loop-zilu/benchmark43_conjunctive_abstracted.yml          true                             0.13        0.13        None
+loop-zilu/benchmark51_polynomial.yml                      true                             0.14        0.14        None
+-----------------------------------------------------------------------------------------------------------------------
+Run set 1                                                 done                          5210.32     5232.91           -
+
+Statistics:            230 Files
+  correct:             212
+    correct true:      179
+    correct false:      33
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:              18
+  Score:               391 (max: 421)

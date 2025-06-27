@@ -1,0 +1,9 @@
+tool	gps 	gps 	gps 	gps 
+run set	SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines	SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines	SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines	SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines
+../suite3c-lock-and-key-statemachines/	status	cputime (s)	walltime (s)	memory (MB)
+abracadabra.yml	false	0.889756	0.881593101999897	54.550528
+abracadabraabra.yml	false	8.232655	8.235566510003991	58.638336
+cadabra.yml	false	0.399584	0.40535691600234713	54.837248
+godefroid-ndss08.yml	false	0.227898	0.22936978899815585	54.697984
+gps-rc-ex.yml	false	0.193504	0.19175888899917481	54.628352
+majumdar-icse07.yml	false	0.695597	0.700678995999624	54.308864

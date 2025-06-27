@@ -1,0 +1,71 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loop-acceleration/nested_1-1.c
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 4 is loop header
+changing 4->8 to 4->35->8
+ --- 13 is loop header
+changing 13->17 to 13->36->17
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 5
+visiting vertex 7
+visiting vertex 8
+visiting vertex 9
+visiting vertex 10
+visiting vertex 11
+visiting vertex 12
+visiting vertex 13
+visiting vertex 14
+visiting vertex 16
+visiting vertex 17
+visiting vertex 18
+visiting vertex 19
+visiting vertex 20
+visiting vertex 21
+visiting vertex 22
+visiting vertex 24
+visiting vertex 25
+visiting vertex 26
+visiting vertex 28
+visiting vertex 29
+trying rtc on vertex 29
+ visiting vertex 30
+visiting vertex 31
+visiting vertex 32
+trying rtc on vertex 32
+ visiting vertex 33
+trying rtc on vertex 33
+ visiting vertex 34
+visiting vertex 35
+trying rtc on vertex 35
+ visiting vertex 36
+trying rtc on vertex 36
+ removing edge from 36 36
+success: contracting vertex 36 -1
+visiting vertex 29
+trying rtc on vertex 29
+ visiting vertex 32
+trying rtc on vertex 32
+ visiting vertex 33
+trying rtc on vertex 33
+ visiting vertex 35
+trying rtc on vertex 35
+ visiting vertex 36
+visiting vertex 29
+trying rtc on vertex 29
+ visiting vertex 32
+trying rtc on vertex 32
+ visiting vertex 33
+trying rtc on vertex 33
+ visiting vertex 35
+trying rtc on vertex 35
+ ...failed.
+testing reachability of location 38
+------------------------------
+  proven safe
+------------------------------
+../suite1-svcomp/loop-acceleration/nested_1-1.c:26: Warning: Body of function main falls-through. Adding a return statement

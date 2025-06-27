@@ -1,0 +1,366 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loop-invgen/apache-get-tag.i.v+nlh-reducer.c
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 97 is loop header
+changing 97->236 to 97->286->236
+ --- 14 is loop header
+changing 14->15 to 14->287->15
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 6
+visiting vertex 7
+visiting vertex 8
+visiting vertex 9
+visiting vertex 10
+visiting vertex 11
+visiting vertex 12
+visiting vertex 13
+visiting vertex 14
+visiting vertex 15
+visiting vertex 16
+visiting vertex 17
+visiting vertex 18
+visiting vertex 19
+visiting vertex 20
+visiting vertex 21
+visiting vertex 22
+visiting vertex 23
+visiting vertex 25
+trying rtc on vertex 25
+ visiting vertex 26
+visiting vertex 27
+visiting vertex 29
+visiting vertex 31
+visiting vertex 32
+visiting vertex 33
+trying rtc on vertex 33
+ visiting vertex 34
+visiting vertex 35
+visiting vertex 37
+visiting vertex 39
+visiting vertex 40
+visiting vertex 41
+visiting vertex 42
+visiting vertex 44
+visiting vertex 46
+visiting vertex 47
+visiting vertex 48
+visiting vertex 49
+visiting vertex 50
+visiting vertex 51
+visiting vertex 52
+visiting vertex 54
+trying rtc on vertex 54
+ visiting vertex 55
+visiting vertex 56
+visiting vertex 58
+visiting vertex 60
+visiting vertex 61
+visiting vertex 62
+trying rtc on vertex 62
+ visiting vertex 63
+visiting vertex 64
+visiting vertex 66
+visiting vertex 68
+visiting vertex 69
+visiting vertex 70
+visiting vertex 72
+visiting vertex 73
+visiting vertex 74
+trying rtc on vertex 74
+ visiting vertex 75
+visiting vertex 76
+visiting vertex 78
+visiting vertex 80
+visiting vertex 81
+visiting vertex 82
+visiting vertex 83
+visiting vertex 85
+visiting vertex 87
+visiting vertex 88
+visiting vertex 89
+visiting vertex 90
+visiting vertex 91
+visiting vertex 92
+visiting vertex 93
+visiting vertex 94
+visiting vertex 95
+visiting vertex 96
+visiting vertex 97
+visiting vertex 98
+visiting vertex 99
+visiting vertex 100
+visiting vertex 102
+visiting vertex 103
+visiting vertex 104
+visiting vertex 105
+visiting vertex 106
+visiting vertex 108
+trying rtc on vertex 108
+ visiting vertex 109
+visiting vertex 110
+visiting vertex 112
+visiting vertex 114
+visiting vertex 115
+visiting vertex 116
+trying rtc on vertex 116
+ visiting vertex 117
+visiting vertex 118
+visiting vertex 120
+visiting vertex 122
+visiting vertex 123
+visiting vertex 124
+visiting vertex 126
+visiting vertex 127
+visiting vertex 128
+visiting vertex 129
+visiting vertex 131
+visiting vertex 132
+visiting vertex 133
+visiting vertex 134
+visiting vertex 135
+visiting vertex 136
+visiting vertex 137
+visiting vertex 138
+visiting vertex 139
+visiting vertex 140
+visiting vertex 141
+visiting vertex 142
+visiting vertex 143
+visiting vertex 144
+visiting vertex 146
+trying rtc on vertex 146
+ visiting vertex 147
+visiting vertex 148
+visiting vertex 150
+visiting vertex 152
+visiting vertex 153
+visiting vertex 154
+trying rtc on vertex 154
+ visiting vertex 155
+visiting vertex 156
+visiting vertex 158
+trying rtc on vertex 158
+ visiting vertex 160
+visiting vertex 161
+visiting vertex 162
+visiting vertex 163
+visiting vertex 164
+visiting vertex 165
+visiting vertex 166
+visiting vertex 168
+trying rtc on vertex 168
+ visiting vertex 169
+visiting vertex 170
+visiting vertex 172
+visiting vertex 174
+visiting vertex 175
+visiting vertex 176
+trying rtc on vertex 176
+ visiting vertex 177
+visiting vertex 178
+visiting vertex 180
+visiting vertex 182
+visiting vertex 183
+visiting vertex 184
+visiting vertex 186
+visiting vertex 187
+visiting vertex 188
+trying rtc on vertex 188
+ visiting vertex 189
+visiting vertex 190
+visiting vertex 192
+visiting vertex 194
+visiting vertex 195
+visiting vertex 196
+trying rtc on vertex 196
+ visiting vertex 197
+visiting vertex 198
+visiting vertex 200
+visiting vertex 202
+visiting vertex 203
+visiting vertex 204
+visiting vertex 206
+visiting vertex 207
+visiting vertex 208
+visiting vertex 210
+visiting vertex 211
+visiting vertex 212
+visiting vertex 213
+visiting vertex 214
+visiting vertex 215
+visiting vertex 216
+visiting vertex 217
+visiting vertex 218
+visiting vertex 220
+trying rtc on vertex 220
+ visiting vertex 221
+visiting vertex 222
+visiting vertex 224
+visiting vertex 226
+visiting vertex 227
+visiting vertex 228
+trying rtc on vertex 228
+ visiting vertex 229
+visiting vertex 230
+visiting vertex 232
+visiting vertex 234
+visiting vertex 235
+visiting vertex 236
+visiting vertex 238
+visiting vertex 239
+visiting vertex 240
+trying rtc on vertex 240
+ visiting vertex 241
+visiting vertex 242
+visiting vertex 244
+visiting vertex 246
+visiting vertex 247
+visiting vertex 248
+trying rtc on vertex 248
+ visiting vertex 249
+visiting vertex 250
+visiting vertex 252
+trying rtc on vertex 252
+ visiting vertex 254
+visiting vertex 255
+visiting vertex 256
+visiting vertex 258
+visiting vertex 259
+visiting vertex 260
+visiting vertex 261
+visiting vertex 263
+visiting vertex 265
+visiting vertex 266
+visiting vertex 267
+visiting vertex 269
+visiting vertex 270
+visiting vertex 271
+visiting vertex 272
+trying rtc on vertex 272
+ visiting vertex 284
+trying rtc on vertex 284
+ visiting vertex 285
+visiting vertex 286
+trying rtc on vertex 286
+ visiting vertex 287
+trying rtc on vertex 287
+ ...failed.
+visiting vertex 25
+trying rtc on vertex 25
+ visiting vertex 33
+trying rtc on vertex 33
+ visiting vertex 54
+trying rtc on vertex 54
+ visiting vertex 62
+trying rtc on vertex 62
+ visiting vertex 74
+trying rtc on vertex 74
+ visiting vertex 108
+trying rtc on vertex 108
+ visiting vertex 116
+trying rtc on vertex 116
+ visiting vertex 146
+trying rtc on vertex 146
+ visiting vertex 154
+trying rtc on vertex 154
+ visiting vertex 158
+visiting vertex 168
+trying rtc on vertex 168
+ visiting vertex 176
+trying rtc on vertex 176
+ visiting vertex 188
+trying rtc on vertex 188
+ visiting vertex 196
+trying rtc on vertex 196
+ visiting vertex 220
+trying rtc on vertex 220
+ visiting vertex 228
+trying rtc on vertex 228
+ visiting vertex 240
+trying rtc on vertex 240
+ visiting vertex 248
+trying rtc on vertex 248
+ visiting vertex 252
+trying rtc on vertex 252
+ visiting vertex 272
+trying rtc on vertex 272
+ visiting vertex 284
+trying rtc on vertex 284
+ visiting vertex 286
+trying rtc on vertex 286
+ ...failed.
+visiting vertex 287
+trying rtc on vertex 287
+ ...failed.
+visiting vertex 25
+trying rtc on vertex 25
+ visiting vertex 33
+trying rtc on vertex 33
+ visiting vertex 54
+trying rtc on vertex 54
+ visiting vertex 62
+trying rtc on vertex 62
+ visiting vertex 74
+trying rtc on vertex 74
+ visiting vertex 108
+trying rtc on vertex 108
+ visiting vertex 116
+trying rtc on vertex 116
+ visiting vertex 146
+trying rtc on vertex 146
+ visiting vertex 154
+trying rtc on vertex 154
+ visiting vertex 168
+trying rtc on vertex 168
+ visiting vertex 176
+trying rtc on vertex 176
+ visiting vertex 188
+trying rtc on vertex 188
+ visiting vertex 196
+trying rtc on vertex 196
+ visiting vertex 220
+trying rtc on vertex 220
+ visiting vertex 228
+trying rtc on vertex 228
+ visiting vertex 240
+trying rtc on vertex 240
+ visiting vertex 248
+trying rtc on vertex 248
+ visiting vertex 252
+trying rtc on vertex 252
+ visiting vertex 272
+trying rtc on vertex 272
+ visiting vertex 284
+trying rtc on vertex 284
+ visiting vertex 286
+trying rtc on vertex 286
+ ...failed.
+visiting vertex 287
+trying rtc on vertex 287
+ ...failed.
+visiting vertex 273
+visiting vertex 274
+visiting vertex 275
+visiting vertex 276
+visiting vertex 277
+visiting vertex 278
+visiting vertex 279
+visiting vertex 280
+visiting vertex 281
+visiting vertex 282
+trying rtc on vertex 282
+ visiting vertex 283
+trying rtc on vertex 283
+ visiting vertex 282
+trying rtc on vertex 282
+ visiting vertex 283
+trying rtc on vertex 283
+ testing reachability of location 290
+------------------------------
+  proven safe
+------------------------------

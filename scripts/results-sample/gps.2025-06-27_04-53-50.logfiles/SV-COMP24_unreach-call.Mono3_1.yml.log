@@ -1,0 +1,57 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loops-crafted-1/Mono3_1.c
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 4 is loop header
+changing 4->8 to 4->28->8
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 5
+visiting vertex 7
+visiting vertex 8
+visiting vertex 9
+visiting vertex 10
+visiting vertex 11
+visiting vertex 12
+visiting vertex 13
+visiting vertex 14
+visiting vertex 15
+visiting vertex 16
+visiting vertex 17
+visiting vertex 18
+visiting vertex 19
+visiting vertex 21
+visiting vertex 22
+trying rtc on vertex 22
+ visiting vertex 23
+visiting vertex 24
+visiting vertex 25
+trying rtc on vertex 25
+ visiting vertex 26
+trying rtc on vertex 26
+ visiting vertex 27
+visiting vertex 28
+trying rtc on vertex 28
+ removing edge from 28 28
+success: contracting vertex 28 -1
+visiting vertex 22
+trying rtc on vertex 22
+ visiting vertex 25
+trying rtc on vertex 25
+ visiting vertex 26
+trying rtc on vertex 26
+ visiting vertex 28
+visiting vertex 22
+trying rtc on vertex 22
+ visiting vertex 25
+trying rtc on vertex 25
+ visiting vertex 26
+trying rtc on vertex 26
+ testing reachability of location 27
+------------------------------
+  proven unsafe
+------------------------------
+../suite1-svcomp/loops-crafted-1/Mono3_1.c:17: Warning: Body of function main falls-through. Adding a return statement

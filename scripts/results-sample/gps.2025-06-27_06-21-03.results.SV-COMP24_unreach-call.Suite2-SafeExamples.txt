@@ -1,0 +1,56 @@
+   BENCHMARK INFORMATION
+gps
+benchmark definition:    benchmark-defs/gps.xml
+name:                    gps
+run sets:                SV-COMP24_unreach-call.Suite2-SafeExamples
+date:                    Fri, 2025-06-27 06:21:03 UTC
+tool:                    gps
+tool executable:         /gps-ae/duet-gps/duet.exe
+options:                 -monotone -cra-split-loops -gps-gas
+resource limits:
+- memory:                15000.0 MB
+- time:                  900 s
+- cpu cores:             6
+hardware requirements:
+- cpu cores:             6
+- memory:                15000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ac8a6a12a11c
+os:                      Linux-6.8.0-60-generic-x86_64-with-glibc2.39
+cpu:                     13th Gen Intel Core i7-13700H
+- cores:                 20
+- max frequency:         4800.0 MHz
+- turbo boost enabled:   True
+ram:                     16421.941248 MB
+------------------------------------------------------------
+
+
+
+SV-COMP24_unreach-call.Suite2-SafeExamples
+Run set 1 of 1 with options '-monotone -cra-split-loops -gps-gas' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+email1.yml              true                             0.21        0.19        None
+email2.yml              true                             0.14        0.14        None
+email3.yml              true                             0.23        0.23        None
+ex2-a.yml               true                             0.22        0.22        None
+ex3-a.yml               true                             0.39        0.38        None
+verify1.yml             true                             2.53        2.54        None
+verify2.yml             true                             1.62        1.63        None
+verify3.yml             true                             0.34        0.34        None
+verify4.yml             true                             0.36        0.35        None
+-------------------------------------------------------------------------------------
+Run set 1               done                             6.02        6.92           -
+
+Statistics:              9 Files
+  correct:               9
+    correct true:        9
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               0
+  Score:                18 (max: 18)

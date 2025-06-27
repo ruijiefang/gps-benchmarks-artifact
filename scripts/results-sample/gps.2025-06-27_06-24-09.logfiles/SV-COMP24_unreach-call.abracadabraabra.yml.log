@@ -1,0 +1,219 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite3c-lock-and-key-statemachines/abracadabraabra.c
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 3 is loop header
+changing 3->4 to 3->198->4
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 5
+visiting vertex 6
+visiting vertex 7
+visiting vertex 8
+visiting vertex 9
+visiting vertex 10
+visiting vertex 11
+visiting vertex 12
+visiting vertex 13
+visiting vertex 14
+visiting vertex 15
+visiting vertex 16
+visiting vertex 17
+visiting vertex 18
+visiting vertex 19
+visiting vertex 20
+visiting vertex 21
+visiting vertex 22
+visiting vertex 23
+visiting vertex 24
+visiting vertex 25
+visiting vertex 26
+visiting vertex 27
+visiting vertex 28
+visiting vertex 29
+visiting vertex 30
+visiting vertex 31
+visiting vertex 32
+visiting vertex 33
+visiting vertex 34
+visiting vertex 35
+visiting vertex 36
+visiting vertex 37
+visiting vertex 38
+visiting vertex 39
+visiting vertex 40
+visiting vertex 41
+visiting vertex 42
+visiting vertex 43
+visiting vertex 44
+visiting vertex 45
+visiting vertex 46
+visiting vertex 47
+visiting vertex 48
+visiting vertex 49
+visiting vertex 50
+visiting vertex 51
+visiting vertex 52
+visiting vertex 53
+visiting vertex 54
+visiting vertex 55
+visiting vertex 56
+visiting vertex 57
+visiting vertex 58
+visiting vertex 59
+visiting vertex 60
+visiting vertex 61
+visiting vertex 62
+visiting vertex 63
+visiting vertex 64
+visiting vertex 65
+visiting vertex 66
+visiting vertex 67
+visiting vertex 68
+visiting vertex 69
+visiting vertex 70
+visiting vertex 71
+visiting vertex 72
+visiting vertex 73
+visiting vertex 74
+visiting vertex 75
+visiting vertex 76
+visiting vertex 77
+visiting vertex 78
+visiting vertex 79
+visiting vertex 80
+visiting vertex 81
+visiting vertex 82
+visiting vertex 83
+visiting vertex 84
+visiting vertex 85
+visiting vertex 86
+visiting vertex 87
+visiting vertex 88
+visiting vertex 89
+visiting vertex 90
+visiting vertex 91
+visiting vertex 92
+visiting vertex 93
+visiting vertex 94
+visiting vertex 95
+visiting vertex 96
+visiting vertex 97
+visiting vertex 98
+visiting vertex 99
+visiting vertex 100
+visiting vertex 101
+visiting vertex 102
+visiting vertex 103
+visiting vertex 104
+visiting vertex 105
+visiting vertex 106
+visiting vertex 107
+visiting vertex 108
+visiting vertex 109
+visiting vertex 110
+visiting vertex 111
+visiting vertex 112
+visiting vertex 113
+visiting vertex 114
+visiting vertex 115
+visiting vertex 116
+visiting vertex 117
+visiting vertex 118
+visiting vertex 119
+visiting vertex 120
+visiting vertex 121
+visiting vertex 122
+visiting vertex 123
+visiting vertex 124
+visiting vertex 125
+visiting vertex 126
+visiting vertex 127
+visiting vertex 128
+visiting vertex 129
+visiting vertex 130
+visiting vertex 131
+visiting vertex 132
+visiting vertex 133
+visiting vertex 134
+visiting vertex 135
+visiting vertex 136
+visiting vertex 137
+visiting vertex 138
+visiting vertex 139
+visiting vertex 140
+visiting vertex 141
+visiting vertex 142
+visiting vertex 143
+visiting vertex 144
+visiting vertex 145
+visiting vertex 146
+visiting vertex 147
+visiting vertex 148
+visiting vertex 149
+visiting vertex 150
+visiting vertex 151
+visiting vertex 152
+visiting vertex 153
+visiting vertex 154
+visiting vertex 155
+visiting vertex 156
+visiting vertex 157
+visiting vertex 158
+visiting vertex 159
+visiting vertex 160
+visiting vertex 161
+visiting vertex 162
+visiting vertex 163
+visiting vertex 164
+visiting vertex 165
+visiting vertex 166
+visiting vertex 167
+visiting vertex 168
+visiting vertex 169
+visiting vertex 170
+visiting vertex 171
+visiting vertex 172
+visiting vertex 173
+visiting vertex 174
+visiting vertex 175
+visiting vertex 176
+visiting vertex 177
+visiting vertex 178
+visiting vertex 179
+visiting vertex 180
+visiting vertex 181
+visiting vertex 182
+visiting vertex 183
+visiting vertex 184
+visiting vertex 185
+trying rtc on vertex 185
+ visiting vertex 186
+visiting vertex 187
+visiting vertex 188
+visiting vertex 189
+visiting vertex 190
+visiting vertex 195
+trying rtc on vertex 195
+ visiting vertex 196
+trying rtc on vertex 196
+ visiting vertex 197
+visiting vertex 198
+trying rtc on vertex 198
+ ...failed.
+visiting vertex 185
+trying rtc on vertex 185
+ visiting vertex 195
+trying rtc on vertex 195
+ visiting vertex 196
+trying rtc on vertex 196
+ visiting vertex 198
+trying rtc on vertex 198
+ ...failed.
+testing reachability of location 201
+------------------------------
+  proven unsafe
+------------------------------

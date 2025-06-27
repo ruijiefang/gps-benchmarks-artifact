@@ -1,0 +1,53 @@
+   BENCHMARK INFORMATION
+gps
+benchmark definition:    benchmark-defs/gps.xml
+name:                    gps
+run sets:                SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines
+date:                    Fri, 2025-06-27 06:24:09 UTC
+tool:                    gps
+tool executable:         /gps-ae/duet-gps/duet.exe
+options:                 -monotone -cra-split-loops -gps-gas
+resource limits:
+- memory:                15000.0 MB
+- time:                  900 s
+- cpu cores:             6
+hardware requirements:
+- cpu cores:             6
+- memory:                15000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ac8a6a12a11c
+os:                      Linux-6.8.0-60-generic-x86_64-with-glibc2.39
+cpu:                     13th Gen Intel Core i7-13700H
+- cores:                 20
+- max frequency:         4800.0 MHz
+- turbo boost enabled:   True
+ram:                     16421.941248 MB
+------------------------------------------------------------
+
+
+
+SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines
+Run set 1 of 1 with options '-monotone -cra-split-loops -gps-gas' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+abracadabra.yml         false                            0.89        0.88        None
+abracadabraabra.yml     false                            8.23        8.24        None
+cadabra.yml             false                            0.40        0.41        None
+godefroid-ndss08.yml    false                            0.23        0.23        None
+gps-rc-ex.yml           false                            0.19        0.19        None
+majumdar-icse07.yml     false                            0.70        0.70        None
+-------------------------------------------------------------------------------------
+Run set 1               done                            10.64       11.26           -
+
+Statistics:              6 Files
+  correct:               6
+    correct true:        0
+    correct false:       6
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               0
+  Score:                 6 (max: 6)

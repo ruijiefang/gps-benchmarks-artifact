@@ -1,0 +1,47 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loop-acceleration/underapprox_1-1.c
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 4 is loop header
+changing 4->8 to 4->23->8
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 5
+visiting vertex 7
+visiting vertex 8
+visiting vertex 9
+visiting vertex 10
+visiting vertex 11
+visiting vertex 12
+visiting vertex 13
+visiting vertex 14
+visiting vertex 16
+visiting vertex 17
+trying rtc on vertex 17
+ visiting vertex 18
+visiting vertex 19
+visiting vertex 20
+trying rtc on vertex 20
+ visiting vertex 21
+trying rtc on vertex 21
+ visiting vertex 22
+visiting vertex 23
+trying rtc on vertex 23
+ ...failed.
+visiting vertex 17
+trying rtc on vertex 17
+ visiting vertex 20
+trying rtc on vertex 20
+ visiting vertex 21
+trying rtc on vertex 21
+ visiting vertex 23
+trying rtc on vertex 23
+ ...failed.
+testing reachability of location 25
+------------------------------
+  proven unsafe
+------------------------------
+../suite1-svcomp/loop-acceleration/underapprox_1-1.c:21: Warning: Body of function main falls-through. Adding a return statement

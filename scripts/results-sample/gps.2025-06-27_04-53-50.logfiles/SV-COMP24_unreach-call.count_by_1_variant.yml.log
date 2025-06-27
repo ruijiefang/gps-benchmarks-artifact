@@ -1,0 +1,59 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loop-new/count_by_1_variant.i
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 3 is loop header
+changing 3->7 to 3->32->7
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 6
+visiting vertex 7
+visiting vertex 8
+visiting vertex 9
+visiting vertex 10
+visiting vertex 11
+trying rtc on vertex 11
+ visiting vertex 12
+visiting vertex 13
+visiting vertex 15
+visiting vertex 16
+visiting vertex 17
+visiting vertex 18
+trying rtc on vertex 18
+ visiting vertex 30
+trying rtc on vertex 30
+ visiting vertex 31
+visiting vertex 32
+trying rtc on vertex 32
+ visiting vertex 11
+trying rtc on vertex 11
+ visiting vertex 18
+trying rtc on vertex 18
+ visiting vertex 30
+trying rtc on vertex 30
+ visiting vertex 32
+trying rtc on vertex 32
+ visiting vertex 19
+visiting vertex 20
+visiting vertex 21
+visiting vertex 22
+visiting vertex 23
+visiting vertex 24
+visiting vertex 25
+visiting vertex 26
+visiting vertex 27
+visiting vertex 28
+trying rtc on vertex 28
+ visiting vertex 29
+trying rtc on vertex 29
+ visiting vertex 28
+trying rtc on vertex 28
+ visiting vertex 29
+trying rtc on vertex 29
+ testing reachability of location 34
+------------------------------
+  proven safe
+------------------------------

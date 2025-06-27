@@ -1,0 +1,12 @@
+tool	gps 	gps 	gps 	gps 
+run set	SV-COMP24_unreach-call.Suite2-SafeExamples	SV-COMP24_unreach-call.Suite2-SafeExamples	SV-COMP24_unreach-call.Suite2-SafeExamples	SV-COMP24_unreach-call.Suite2-SafeExamples
+../suite2-safe-examples/	status	cputime (s)	walltime (s)	memory (MB)
+email1.yml	true	0.207519	0.18557732599583687	65.036288
+email2.yml	true	0.136326	0.137801489996491	54.497280
+email3.yml	true	0.2307	0.22724248399754288	66.392064
+ex2-a.yml	true	0.22203	0.2222645020010532	73.482240
+ex3-a.yml	true	0.386222	0.38027164099912625	79.450112
+verify1.yml	true	2.526635	2.53848701500101	159.670272
+verify2.yml	true	1.621956	1.6250160790004884	154.042368
+verify3.yml	true	0.335255	0.33713939099834533	100.401152
+verify4.yml	true	0.358868	0.3484365530021023	86.654976

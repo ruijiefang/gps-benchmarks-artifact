@@ -1,0 +1,52 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite1-svcomp/loop-invariants/eq2.c
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 8 is loop header
+changing 8->9 to 8->29->9
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 5
+visiting vertex 6
+visiting vertex 7
+visiting vertex 8
+visiting vertex 9
+visiting vertex 10
+visiting vertex 11
+visiting vertex 13
+visiting vertex 14
+visiting vertex 15
+visiting vertex 16
+visiting vertex 17
+visiting vertex 18
+visiting vertex 19
+visiting vertex 20
+visiting vertex 22
+visiting vertex 23
+trying rtc on vertex 23
+ visiting vertex 24
+visiting vertex 25
+visiting vertex 26
+trying rtc on vertex 26
+ visiting vertex 27
+trying rtc on vertex 27
+ visiting vertex 28
+visiting vertex 29
+trying rtc on vertex 29
+ ...failed.
+visiting vertex 23
+trying rtc on vertex 23
+ visiting vertex 26
+trying rtc on vertex 26
+ visiting vertex 27
+trying rtc on vertex 27
+ visiting vertex 29
+trying rtc on vertex 29
+ ...failed.
+testing reachability of location 31
+------------------------------
+  proven safe
+------------------------------

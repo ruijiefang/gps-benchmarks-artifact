@@ -1,0 +1,122 @@
+/gps-ae/duet-gps/duet.exe -monotone -cra-split-loops -gps-gas ../suite3a-lock-and-key-parametrizable/ccbse-refute2-2000.c
+
+
+--------------------------------------------------------------------------------
+
+
+ --- 37 is loop header
+changing 37->45 to 37->69->45
+ --- 17 is loop header
+changing 17->21 to 17->70->21
+ --- 6 is loop header
+changing 6->10 to 6->71->10
+visiting vertex 2
+visiting vertex 3
+visiting vertex 4
+visiting vertex 5
+visiting vertex 6
+visiting vertex 7
+visiting vertex 9
+visiting vertex 10
+visiting vertex 11
+visiting vertex 12
+visiting vertex 13
+visiting vertex 14
+visiting vertex 15
+visiting vertex 16
+visiting vertex 17
+visiting vertex 18
+visiting vertex 20
+visiting vertex 21
+visiting vertex 22
+visiting vertex 23
+visiting vertex 24
+visiting vertex 25
+visiting vertex 26
+visiting vertex 27
+visiting vertex 28
+visiting vertex 29
+visiting vertex 30
+visiting vertex 31
+visiting vertex 32
+visiting vertex 33
+visiting vertex 34
+visiting vertex 36
+visiting vertex 37
+visiting vertex 38
+visiting vertex 39
+visiting vertex 40
+trying rtc on vertex 40
+ visiting vertex 41
+visiting vertex 42
+visiting vertex 43
+visiting vertex 44
+visiting vertex 45
+visiting vertex 46
+visiting vertex 47
+visiting vertex 48
+visiting vertex 49
+visiting vertex 52
+visiting vertex 53
+visiting vertex 54
+visiting vertex 55
+visiting vertex 56
+visiting vertex 57
+visiting vertex 59
+visiting vertex 60
+visiting vertex 61
+visiting vertex 62
+visiting vertex 63
+visiting vertex 64
+visiting vertex 65
+visiting vertex 66
+trying rtc on vertex 66
+ visiting vertex 67
+trying rtc on vertex 67
+ visiting vertex 68
+visiting vertex 69
+trying rtc on vertex 69
+ removing edge from 69 69
+success: contracting vertex 69 -1
+visiting vertex 70
+trying rtc on vertex 70
+ ...failed.
+visiting vertex 71
+trying rtc on vertex 71
+ removing edge from 71 71
+success: contracting vertex 71 -1
+visiting vertex 40
+trying rtc on vertex 40
+ visiting vertex 66
+trying rtc on vertex 66
+ visiting vertex 67
+trying rtc on vertex 67
+ visiting vertex 69
+visiting vertex 70
+trying rtc on vertex 70
+ ...failed.
+visiting vertex 71
+visiting vertex 40
+trying rtc on vertex 40
+ removing edge from 40 40
+success: contracting vertex 40 -1
+visiting vertex 66
+trying rtc on vertex 66
+ visiting vertex 67
+trying rtc on vertex 67
+ visiting vertex 70
+trying rtc on vertex 70
+ ...failed.
+visiting vertex 40
+trying rtc on vertex 40
+ visiting vertex 66
+trying rtc on vertex 66
+ visiting vertex 67
+trying rtc on vertex 67
+ visiting vertex 70
+trying rtc on vertex 70
+ ...failed.
+testing reachability of location 73
+------------------------------
+  proven unsafe
+------------------------------
