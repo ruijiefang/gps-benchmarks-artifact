@@ -51,6 +51,7 @@ def run():
                                 '--allowedCores', # https://github.com/sosy-lab/benchexec/issues/850
                                 '0-5',
                                 "--no-container",
+                                "--no-compress-results",
                                 "--no-tmpfs",
                                 "-W", str(timeout),
                                  "-t", suite,
@@ -66,6 +67,7 @@ def run():
                                 toolbins[tool],
                                 "--no-container",
                                 "--no-tmpfs",
+                                "--no-compress-results",
                                 "-W", str(timeout),
                                  "-t", suite,
                                  "benchmark-defs/%s.xml" % tool],
