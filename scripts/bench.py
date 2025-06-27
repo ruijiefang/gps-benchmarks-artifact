@@ -11,14 +11,31 @@ toolbins = {
         'gpsnogas' :  '/gps-ae/duet-gps/',
         'gpsnogasnosum' :  '/gps-ae/duet-gps/',
         'veriabs' : '/gps-ae/VeriAbs/',
-        'cpachecker': '/gps-ae/CPAchecker-2.3-unix/',
-        'cpaimpact': '/gps-ae/CPAchecker-2.3-unix/',
+        'cpachecker': '/gps-ae/CPAchecker-2.3-unix/', # 2.3 is the SVCOMP-24 version checkpointed on Zenodo
+        'cpaimpact': '/gps-ae/CPAchecker-4.0-unix/', # 4.0 has ImpactRefiner-SBE.properties, which is undeprecated and documented
         'gps' : '/gps-ae/duet-gps/',
         'gpslite' : '/gps-ae/duet-gps/',
         'symbiotic': '/gps-ae/symbiotic/bin/',
 }
 suites = []
 tools = []
+
+cpus = None
+numCpus = None
+try: 
+    with open('/gps-ae/tmpfiles/cpus') as f: 
+        cpus = f.read().lstrip().rstrip()
+        numCpus = str(len(cpus.split(',')))
+except:
+    print('ERROR: Could not deduce the hardware CPU requirements.')
+    print('Please run /gps-ae/init.sh to initialize benchmark environment, or the following commands manually')
+    print("""
+        FREQ=`lscpu -e | awk '//{print $7}' | sort | uniq -c | sort -n | tail -1 | awk '//{print $2}'`;
+        CPUS=`lscpu -e | awk -v freq="$FREQ" '//{ if($7==freq) print $1 }'`;
+        echo $CPUS | tr ' ' ',' > /gps-ae/tmpfiles/cpus
+        """)
+    print("Exiting...")
+    exit(1)
 
 timeout = 600
 cache = False
@@ -47,9 +64,9 @@ def run():
                                 '-M',
                                 '15GB',
                                 '-c',
-                                '6',
+                                numCpus,
                                 '--allowedCores', # https://github.com/sosy-lab/benchexec/issues/850
-                                '0-5',
+                                cpus,
                                 "--no-container",
                                 "--no-compress-results",
                                 "--no-tmpfs",
@@ -61,8 +78,10 @@ def run():
                     subprocess.call(["benchexec",
                                 '-M',
                                 '15GB',
+                                '-c',
+                                numCpus,
                                 '--allowedCores', # https://github.com/sosy-lab/benchexec/issues/850
-                                '0-5',
+                                cpus,
                                 '--tool-directory',
                                 toolbins[tool],
                                 "--no-container",
@@ -106,10 +125,33 @@ def recent_result_data(tools, suites):
     return data
     
 
+def help():
+        print("Unknown command")
+        print('Usage: ./bench.py run --tools tool1[,tool2,...] --suites suite1[,suite2,...]')
+        print('Available tools: ')
+        print(' gps\t Full GPS algorithm')
+        print(' CRA\t Compositional Recurrence Analysis (static analysis only)')
+        print(' gpsnogas\t GPS algorithm without gas-instrumentation')
+        print(' gpsnogasnosum\t Plain GPS algorithm without gas-instrumentation and summary guidance')
+        print(' gpslite\t GPSLite algorithm for summary-guided test generation and execution')
+        print(' veriabs\t VeriAbs portfolio model checker (SVCOMP 2024 configuration)')
+        print(' cpachecker\t CPAchecker portfolio model checker (SVCOMP 2024 configuration)')
+        print(' cpaimpact\t Impact algorithm implementation inside CPAchecker 4.0')
+        print(' symbiotic\t Symbiotic symbolic execution tool (SVCOMP 2024 configuration)')
+        print('')
+        print('Available test suites:')
+        print(' Suite1-SVCOMP\t 230 intraprocedural benchmarks with LIA syntax from SVCOMP 2024')
+        print(' Suite2-SafeExamples\t 9 safe intraprocedural benchmarks from the GPS paper')
+        print(' Suite3a-LockAndKey-Parametric\t 50 parametrizable lock-and-key benchmarks from the GPS paper')
+        print(' Suite3b-LockAndKey-NonParametric\t 1 non-parametrizable lock-and-key benchmark from the GPS paper')
+        print(' Suite3c-LockAndKey-StateMachines\t 6 state-machine lock-and-key benchmarks from the GPS paper')
+
+
 if __name__ == "__main__":
     if (len(sys.argv) <= 1):
         print("No command provided")
-
+        help()
+        exit(1)
     command = sys.argv[1]
     opts = sys.argv[2:]
     cache = False
@@ -137,4 +179,4 @@ if __name__ == "__main__":
     if (command == "run"):
         run()
     else:
-        print("Unknown command")
+        help()

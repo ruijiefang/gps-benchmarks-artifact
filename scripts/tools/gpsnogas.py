@@ -8,8 +8,7 @@ class Tool(benchexec.tools.template.BaseTool):
     """
 
     def executable(self):
-#        return ("/home/rjf/Projects/cav23/duet-IW/duet.exe")
-        return ("/home/rjf/Projects/cav23/duet-gps/duet/duet.exe")
+        return ("/gps-ae/duet-gps/duet.exe")
 
     def name(self):
         return "gpsnogas"
@@ -29,6 +28,6 @@ class Tool(benchexec.tools.template.BaseTool):
         elif "proven unsafe" in output:
             status = result.RESULT_FALSE_PROP
         else:
-            print('output: ', output)
+            #print('output: ', output)
             status = result.RESULT_UNKNOWN
         return status

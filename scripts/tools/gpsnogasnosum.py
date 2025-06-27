@@ -23,6 +23,6 @@ class Tool(benchexec.tools.template.BaseTool):
         elif "proven unsafe" in output:
             status = result.RESULT_FALSE_PROP
         else:
-            print('output: ', output)
+            #print('output: ', output)
             status = result.RESULT_UNKNOWN
         return status
