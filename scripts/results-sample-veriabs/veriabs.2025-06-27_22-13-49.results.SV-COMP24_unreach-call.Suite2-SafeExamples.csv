@@ -1,0 +1,12 @@
+tool	VeriAbs 1.5.1-2	VeriAbs 1.5.1-2	VeriAbs 1.5.1-2	VeriAbs 1.5.1-2
+run set	SV-COMP24_unreach-call.Suite2-SafeExamples	SV-COMP24_unreach-call.Suite2-SafeExamples	SV-COMP24_unreach-call.Suite2-SafeExamples	SV-COMP24_unreach-call.Suite2-SafeExamples
+../suite2-safe-examples/	status	cputime (s)	walltime (s)	memory (MB)
+email1.yml	TIMEOUT	211.67973	201.00369345000945	1100.390400
+email2.yml	true	6.599032	2.412963102993672	207.900672
+email3.yml	true	6.718355	2.4239569420024054	206.553088
+ex2-a.yml	TIMEOUT	211.487232	201.01597527999547	945.205248
+ex3-a.yml	true	6.933763	2.582640912005445	211.480576
+verify1.yml	true	6.85783	2.6117246100038756	236.736512
+verify2.yml	true	7.007777	2.6451832539896714	249.053184
+verify3.yml	true	7.206028	2.7057994969945867	242.712576
+verify4.yml	true	7.31444	2.8315308339952026	302.727168

@@ -1,0 +1,69 @@
+/gps-ae/VeriAbs/scripts/veriabs --sv22 --property-file ../suite1-svcomp/properties/unreach-call.prp -32 ../suite1-svcomp/loop-invgen/apache-get-tag.i.p+sep-reducer.c
+
+
+--------------------------------------------------------------------------------
+
+
+VeriAbs
+1.5.1-2
+
+This product includes software developed by Daniel Kroening, Edmund Clarke,
+Computer Science Department, University of Oxford
+Computer Science Department, Carnegie Mellon University
+
+VeriAbs root: /gps-ae/VeriAbs
+SV-COMP'22 STRATEGY CONFIGURATION.
+file: ../suite1-svcomp/loop-invgen/apache-get-tag.i.p+sep-reducer.c
+
+
+
+
+***Preparing IRs for each C file...
+
+
+IR generation completed
+Attempting IFLS:  -- No.
+
+
+=0,1000
+tail: cannot open '/tmp/BenchExec_run_3pol2dyz/home/ar_abs_temp_2025-06-27_20-38-27-432668981/apache_get_tag_i_p_sep_reducer_c/LSH/arrstatus' for reading: No such file or directory
+
+
+VeriAbs not to predict strategy.
+
+IR generation completed
+
+---------------ARRAY_PRUNE---------------
+Created File : /tmp/BenchExec_run_3pol2dyz/home/ar_abs_temp_2025-06-27_20-38-27-432668981/apache_get_tag_i_p_sep_reducer_c/IRs/labtec.ini
+cmd: timeout -k 2s 895s /gps-ae/VeriAbs/scripts/callPrune apache_get_tag_i_p_sep_reducer_c
+MTS:OUT OF SCOPE
+ARP:PROGRAM OUT OF SCOPE
+
+TECH-ORDER-NO: 1, TECHNIQUE: Pruning, RESULT: VERIABS_UNKNOWN, TIME: 2s, BOUND: -1, MODEL-CHECKER-CALLS: 2
+
+
+-REFINED-INVS-
+KI:
+processing done
+CPAC root: /gps-ae/VeriAbs/cpact/CPAchecker-1.8-unix
+
+Total time taken before KI: 2
+
+KI Command:
+scripts/cpa.sh  -config /gps-ae/VeriAbs/cpact/CPAchecker-1.8-unix/config/kInduction.properties -heap 10000M -spec /gps-ae/VeriAbs/supportFiles/reachsafety.prp  /tmp/BenchExec_run_3pol2dyz/home/ar_abs_temp_2025-06-27_20-38-27-432668981/KI.c >/tmp/BenchExec_run_3pol2dyz/home/ar_abs_temp_2025-06-27_20-38-27-432668981/apache_get_tag_i_p_sep_reducer_c/Logs/cpaPALog.txt 2>&1
+KI time taken: 6
+
+VeriAbs:KI:VERIABS_VERIFICATION_SUCCESSFUL
+
+witness test_d : /gps-ae/gps-benchmarks-artifact/scripts/witness.graphml.
+
+TECH-ORDER-NO: 2, TECHNIQUE: refinedKInduction, RESULT: VERIABS_VERIFICATION_SUCCESSFUL, TIME: 6s, BOUND: -1, MODEL-CHECKER-CALLS: 3
+Technique not found.
+
+TOTAL NO. TECHNIQUES TRIED = 1, TOTAL NO. MODEL CHECKER CALLS = 0
+
+
+Your usage of VeriAbs software will be governed by the evaluation license.
+Evaluation license is located at /gps-ae/VeriAbs
+For any queries please contact us at veriabs.tool@tcs.com.
+

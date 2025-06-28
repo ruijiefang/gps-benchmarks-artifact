@@ -1,0 +1,9 @@
+tool	VeriAbs 1.5.1-2	VeriAbs 1.5.1-2	VeriAbs 1.5.1-2	VeriAbs 1.5.1-2
+run set	SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines	SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines	SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines	SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines
+../suite3c-lock-and-key-statemachines/	status	cputime (s)	walltime (s)	memory (MB)
+abracadabra.yml	false(unreach-call)	15.608117	5.647570834989892	478.392320
+abracadabraabra.yml	false(unreach-call)	15.579284	5.71132208101335	490.139648
+cadabra.yml	false(unreach-call)	15.401456	5.691459825000493	729.907200
+godefroid-ndss08.yml	false(unreach-call)	14.236349	5.038170993997483	227.295232
+gps-rc-ex.yml	false(unreach-call)	13.920282	5.0964419249939965	225.775616
+majumdar-icse07.yml	false(unreach-call)	19.275047	8.110339949998888	763.183104

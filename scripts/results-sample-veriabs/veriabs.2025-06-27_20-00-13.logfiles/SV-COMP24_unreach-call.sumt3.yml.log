@@ -1,0 +1,90 @@
+/gps-ae/VeriAbs/scripts/veriabs --sv22 --property-file ../suite1-svcomp/properties/unreach-call.prp -32 ../suite1-svcomp/loops-crafted-1/sumt3.c
+
+
+--------------------------------------------------------------------------------
+
+
+VeriAbs
+1.5.1-2
+
+This product includes software developed by Daniel Kroening, Edmund Clarke,
+Computer Science Department, University of Oxford
+Computer Science Department, Carnegie Mellon University
+
+VeriAbs root: /gps-ae/VeriAbs
+SV-COMP'22 STRATEGY CONFIGURATION.
+file: ../suite1-svcomp/loops-crafted-1/sumt3.c
+
+
+
+
+***Preparing IRs for each C file...
+
+
+IR generation completed
+Attempting IFLS:  -- No.
+
+
+=0,1000
+tail: cannot open '/tmp/BenchExec_run_wguq1kpy/home/ar_abs_temp_2025-06-27_21-59-21-530122061/sumt3_c/LSH/arrstatus' for reading: No such file or directory
+tail: cannot open '/tmp/BenchExec_run_wguq1kpy/home/ar_abs_temp_2025-06-27_21-59-21-530122061/sumt3_c/LSH/arrstatus' for reading: No such file or directory
+/gps-ae/VeriAbs/bin/diffy: error while loading shared libraries: libLLVM-6.0.so.1: cannot open shared object file: No such file or directory
+
+
+VeriAbs not to predict strategy.
+
+IR generation completed
+
+---------------ARRAY_PRUNE---------------
+Created File : /tmp/BenchExec_run_wguq1kpy/home/ar_abs_temp_2025-06-27_21-59-21-530122061/sumt3_c/IRs/labtec.ini
+cmd: timeout -k 2s 895s /gps-ae/VeriAbs/scripts/callPrune sumt3_c
+MTS:OUT OF SCOPE
+ARP:PROGRAM OUT OF SCOPE
+
+TECH-ORDER-NO: 1, TECHNIQUE: Pruning, RESULT: VERIABS_UNKNOWN, TIME: 1s, BOUND: -1, MODEL-CHECKER-CALLS: 2
+
+
+---------------LOOP_SHRINK---------------
+Created File : /tmp/BenchExec_run_wguq1kpy/home/ar_abs_temp_2025-06-27_21-59-21-530122061/sumt3_c/IRs/labtec.ini
+
+Array Abstraction
+cmd: timeout -k 2s 895s /gps-ae/VeriAbs/scripts/callShrink sumt3_c
+LSH Array Abstraction not applied
+
+TECH-ORDER-NO: 2, TECHNIQUE: Shrinking, RESULT: VERIABS_UNKNOWN, TIME: 0s, BOUND: -1, MODEL-CHECKER-CALLS: 4
+
+
+DIFF.
+Running /gps-ae/VeriAbs/bin/diffy /tmp/BenchExec_run_wguq1kpy/home/ar_abs_temp_2025-06-27_21-59-21-530122061/sumt3_c.c
+TECH-ORDER-NO: 3, TECHNIQUE: Diffy, RESULT: VERIABS_UNKNOWN, TIME: 0s, BOUND: -1, MODEL-CHECKER-CALLS: 5
+
+
+-ESM:PLM- 
+PLM info extraction done 
+
+PLM:PL: error while compilation (ESMC): Exiting
+
+TECH-ORDER-NO: 4, TECHNIQUE: plm, RESULT: VERIABS_UNKNOWN, TIME: 1s, BOUND: -1, MODEL-CHECKER-CALLS: 7
+
+
+-AWI
+
+Abstraction without induction + output abstraction
+Gcc preprocessing started
+Running on unparsed file without induction..
+NO_TIMEOUT for cbmc call: 0 && timeout val 120 s.
+
+VeriAbs :VERIABS_VERIFICATION_SUCCESSFUL
+
+witness test_d : /gps-ae/gps-benchmarks-artifact/scripts/witness.graphml.
+
+TECH-ORDER-NO: 5, TECHNIQUE: labmcNoInduction, RESULT: VERIABS_VERIFICATION_SUCCESSFUL, TIME: 0s, BOUND: 20, MODEL-CHECKER-CALLS: 8
+Technique not found.
+
+TOTAL NO. TECHNIQUES TRIED = 1, TOTAL NO. MODEL CHECKER CALLS = 0
+
+
+Your usage of VeriAbs software will be governed by the evaluation license.
+Evaluation license is located at /gps-ae/VeriAbs
+For any queries please contact us at veriabs.tool@tcs.com.
+

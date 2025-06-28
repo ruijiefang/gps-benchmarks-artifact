@@ -1,0 +1,56 @@
+   BENCHMARK INFORMATION
+benchmark definition:    benchmark-defs/veriabs.xml
+name:                    veriabs
+run sets:                SV-COMP24_unreach-call.Suite2-SafeExamples
+date:                    Fri, 2025-06-27 22:13:49 UTC
+tool:                    VeriAbs 1.5.1-2
+tool executable:         /gps-ae/VeriAbs/scripts/veriabs
+options:                 --sv22
+resource limits:
+- memory:                15000.0 MB
+- time:                  900 s
+- cpu cores:             8
+hardware requirements:
+- cpu model:             Intel Xeon E3-1230 v5 @ 3.40 GHz
+- cpu cores:             8
+- memory:                15000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ac8a6a12a11c
+os:                      Linux-6.8.0-60-generic-x86_64-with-glibc2.39
+cpu:                     13th Gen Intel Core i7-13700H
+- cores:                 20
+- max frequency:         4800.0 MHz
+- turbo boost enabled:   True
+ram:                     16421.941248 MB
+------------------------------------------------------------
+
+
+
+SV-COMP24_unreach-call.Suite2-SafeExamples
+Run set 1 of 1 with options '--sv22' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+email1.yml              TIMEOUT                        211.68      201.00        None
+email2.yml              true                             6.60        2.41        None
+email3.yml              true                             6.72        2.42        None
+ex2-a.yml               TIMEOUT                        211.49      201.02        None
+ex3-a.yml               true                             6.93        2.58        None
+verify1.yml             true                             6.86        2.61        None
+verify2.yml             true                             7.01        2.65        None
+verify3.yml             true                             7.21        2.71        None
+verify4.yml             true                             7.31        2.83        None
+-------------------------------------------------------------------------------------
+Run set 1               done                            48.66      422.18           -
+
+Statistics:              9 Files
+  correct:               7
+    correct true:        7
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               2
+  Score:                14 (max: 18)

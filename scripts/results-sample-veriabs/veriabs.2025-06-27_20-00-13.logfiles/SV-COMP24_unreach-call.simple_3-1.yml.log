@@ -1,0 +1,124 @@
+/gps-ae/VeriAbs/scripts/veriabs --sv22 --property-file ../suite1-svcomp/properties/unreach-call.prp -32 ../suite1-svcomp/loop-acceleration/simple_3-1.c
+
+
+--------------------------------------------------------------------------------
+
+
+VeriAbs
+1.5.1-2
+
+This product includes software developed by Daniel Kroening, Edmund Clarke,
+Computer Science Department, University of Oxford
+Computer Science Department, Carnegie Mellon University
+
+VeriAbs root: /gps-ae/VeriAbs
+SV-COMP'22 STRATEGY CONFIGURATION.
+file: ../suite1-svcomp/loop-acceleration/simple_3-1.c
+
+
+
+
+***Preparing IRs for each C file...
+
+
+IR generation completed
+Attempting IFLS:  -- No.
+
+
+=0,1000
+tail: cannot open '/tmp/BenchExec_run_brgd7nlg/home/ar_abs_temp_2025-06-27_20-14-17-871326283/simple_3_1_c/LSH/arrstatus' for reading: No such file or directory
+tail: cannot open '/tmp/BenchExec_run_brgd7nlg/home/ar_abs_temp_2025-06-27_20-14-17-871326283/simple_3_1_c/LSH/arrstatus' for reading: No such file or directory
+/gps-ae/VeriAbs/bin/diffy: error while loading shared libraries: libLLVM-6.0.so.1: cannot open shared object file: No such file or directory
+
+
+VeriAbs not to predict strategy.
+
+IR generation completed
+
+---------------ARRAY_PRUNE---------------
+Created File : /tmp/BenchExec_run_brgd7nlg/home/ar_abs_temp_2025-06-27_20-14-17-871326283/simple_3_1_c/IRs/labtec.ini
+cmd: timeout -k 2s 895s /gps-ae/VeriAbs/scripts/callPrune simple_3_1_c
+MTS:OUT OF SCOPE
+ARP:PROGRAM OUT OF SCOPE
+
+TECH-ORDER-NO: 1, TECHNIQUE: Pruning, RESULT: VERIABS_UNKNOWN, TIME: 1s, BOUND: -1, MODEL-CHECKER-CALLS: 2
+
+
+---------------LOOP_SHRINK---------------
+Created File : /tmp/BenchExec_run_brgd7nlg/home/ar_abs_temp_2025-06-27_20-14-17-871326283/simple_3_1_c/IRs/labtec.ini
+
+Array Abstraction
+cmd: timeout -k 2s 895s /gps-ae/VeriAbs/scripts/callShrink simple_3_1_c
+LSH Array Abstraction not applied
+
+TECH-ORDER-NO: 2, TECHNIQUE: Shrinking, RESULT: VERIABS_UNKNOWN, TIME: 0s, BOUND: -1, MODEL-CHECKER-CALLS: 4
+
+
+DIFF.
+Running /gps-ae/VeriAbs/bin/diffy /tmp/BenchExec_run_brgd7nlg/home/ar_abs_temp_2025-06-27_20-14-17-871326283/simple_3_1_c.c
+TECH-ORDER-NO: 3, TECHNIQUE: Diffy, RESULT: VERIABS_UNKNOWN, TIME: 0s, BOUND: -1, MODEL-CHECKER-CALLS: 5
+
+
+-ESM:PLM- 
+PLM info extraction done 
+
+PLM:PL: error while compilation (ESMC): Exiting
+
+TECH-ORDER-NO: 4, TECHNIQUE: plm, RESULT: VERIABS_UNKNOWN, TIME: 1s, BOUND: -1, MODEL-CHECKER-CALLS: 7
+
+
+-AWI
+
+Abstraction without induction + output abstraction
+Gcc preprocessing started
+Running on unparsed file without induction..
+NO_TIMEOUT for cbmc call: 2560 && timeout val 120 s.
+
+VeriAbs :UNKNOWN/ERR
+
+TECH-ORDER-NO: 5, TECHNIQUE: labmcNoInduction, RESULT: VERIABS_UNKNOWN, TIME: 0s, BOUND: 20, MODEL-CHECKER-CALLS: 8
+
+
+--LWI.
+Gcc preprocessing started
+Running on unparsed file with induction..
+NO_TIMEOUT for cbmc call: 2560 && timeout val 120 s.
+
+TECH-ORDER-NO: 6, TECHNIQUE: loopAbsInduction, RESULT: VERIABS_UNKNOWN, TIME: 1s, BOUND: -1, MODEL-CHECKER-CALLS: 10
+
+
+--BM(16)
+
+NO_TIMEOUT for cbmc call: 2560 && timeout val 150 s.
+
+VeriAbs :LOOP UNWINDING ASSERTION FAILURE
+
+TECH-ORDER-NO: 7, TECHNIQUE: cbmcDefault, RESULT: LOOP UNWINDING ASSERTION FAILURE, TIME: 0s, BOUND: 16, MODEL-CHECKER-CALLS: 11
+
+
+---------------KB ---------------
+TIMEOUT:CBMC KILLED : 31744 && timeout val 150 s.
+
+VeriAbs :BMC_TOERR
+
+TECH-ORDER-NO: 8, TECHNIQUE: cbmcWithKnownBound, RESULT: TOERR, TIME: 150s, BOUND: -1, MODEL-CHECKER-CALLS: 12
+
+
+-SUM.
+Running on summarizer generated file..
+NO_TIMEOUT for cbmc call: 2560 && timeout val 120 s.
+
+VeriAbs :VERIABS_VERIFICATION_FAILED
+
+Witness : /gps-ae/gps-benchmarks-artifact/scripts/witness.graphml.
+
+TECH-ORDER-NO: 9, TECHNIQUE: summarizer, RESULT: VERIABS_VERIFICATION_FAILED, TIME: 1s, BOUND: 20, MODEL-CHECKER-CALLS: 13
+Technique not found.
+
+TOTAL NO. TECHNIQUES TRIED = 1, TOTAL NO. MODEL CHECKER CALLS = 0
+
+
+Your usage of VeriAbs software will be governed by the evaluation license.
+Evaluation license is located at /gps-ae/VeriAbs
+For any queries please contact us at veriabs.tool@tcs.com.
+

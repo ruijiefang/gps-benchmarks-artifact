@@ -1,0 +1,97 @@
+   BENCHMARK INFORMATION
+benchmark definition:    benchmark-defs/veriabs.xml
+name:                    veriabs
+run sets:                SV-COMP24_unreach-call.Suite3a-LockAndKey-Parametric
+date:                    Fri, 2025-06-27 22:20:52 UTC
+tool:                    VeriAbs 1.5.1-2
+tool executable:         /gps-ae/VeriAbs/scripts/veriabs
+options:                 --sv22
+resource limits:
+- memory:                15000.0 MB
+- time:                  900 s
+- cpu cores:             8
+hardware requirements:
+- cpu model:             Intel Xeon E3-1230 v5 @ 3.40 GHz
+- cpu cores:             8
+- memory:                15000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ac8a6a12a11c
+os:                      Linux-6.8.0-60-generic-x86_64-with-glibc2.39
+cpu:                     13th Gen Intel Core i7-13700H
+- cores:                 20
+- max frequency:         4800.0 MHz
+- turbo boost enabled:   True
+ram:                     16421.941248 MB
+------------------------------------------------------------
+
+
+
+SV-COMP24_unreach-call.Suite3a-LockAndKey-Parametric
+Run set 1 of 1 with options '--sv22' and propertyfile 'None'
+
+inputfile                      status                       cpu time   wall time        host
+--------------------------------------------------------------------------------------------
+ccbse-refute1-100.yml          TIMEOUT                        215.28      201.00        None
+ccbse-refute1-1000.yml         TIMEOUT                        214.87      201.02        None
+ccbse-refute1-10000.yml        TIMEOUT                        214.95      201.01        None
+ccbse-refute1-2000.yml         TIMEOUT                        214.92      201.01        None
+ccbse-refute1-250.yml          TIMEOUT                        215.09      201.02        None
+ccbse-refute1-3000.yml         TIMEOUT                        214.61      201.01        None
+ccbse-refute1-500.yml          TIMEOUT                        214.98      201.01        None
+ccbse-refute1-5000.yml         TIMEOUT                        214.95      201.01        None
+ccbse-refute1-77.yml           TIMEOUT                        215.02      201.02        None
+ccbse-refute1-8000.yml         TIMEOUT                        215.66      201.03        None
+ccbse-refute2-100.yml          TIMEOUT                        212.78      204.85        None
+ccbse-refute2-1000.yml         OUT OF MEMORY                  192.16      179.96        None
+ccbse-refute2-10000.yml        OUT OF MEMORY                  192.29      182.06        None
+ccbse-refute2-2000.yml         OUT OF MEMORY                  191.51      180.26        None
+ccbse-refute2-250.yml          OUT OF MEMORY                  187.96      177.32        None
+ccbse-refute2-3000.yml         OUT OF MEMORY                  192.83      182.48        None
+ccbse-refute2-37.yml           OUT OF MEMORY                  184.97      172.01        None
+ccbse-refute2-500.yml          OUT OF MEMORY                  186.65      174.37        None
+ccbse-refute2-5000.yml         TIMEOUT                        214.72      201.02        None
+ccbse-refute2-8000.yml         TIMEOUT                        214.75      201.02        None
+godfroid-issta-1a-100.yml      false(unreach-call)            150.69      129.95        None
+godfroid-issta-1a-1000.yml     TIMEOUT                        222.83      201.02        None
+godfroid-issta-1a-10000.yml    TIMEOUT                        215.42      201.01        None
+godfroid-issta-1a-2000.yml     TIMEOUT                        221.99      201.02        None
+godfroid-issta-1a-250.yml      TIMEOUT                        224.91      201.01        None
+godfroid-issta-1a-3000.yml     TIMEOUT                        215.61      201.01        None
+godfroid-issta-1a-50.yml       false(unreach-call)            132.62      113.95        None
+godfroid-issta-1a-500.yml      TIMEOUT                        222.48      201.02        None
+godfroid-issta-1a-5000.yml     TIMEOUT                        215.41      201.01        None
+godfroid-issta-1a-8000.yml     TIMEOUT                        215.09      201.02        None
+godfroid-issta-1b-100.yml      false(unreach-call)            148.00      128.58        None
+godfroid-issta-1b-1000.yml     TIMEOUT                        213.56      201.01        None
+godfroid-issta-1b-10000.yml    TIMEOUT                        213.52      201.01        None
+godfroid-issta-1b-2000.yml     TIMEOUT                        221.61      201.01        None
+godfroid-issta-1b-250.yml      TIMEOUT                        220.59      201.02        None
+godfroid-issta-1b-30.yml       false(unreach-call)            103.91       87.55        None
+godfroid-issta-1b-3000.yml     TIMEOUT                        213.93      201.01        None
+godfroid-issta-1b-500.yml      TIMEOUT                        224.59      201.02        None
+godfroid-issta-1b-5000.yml     TIMEOUT                        212.87      201.02        None
+godfroid-issta-1b-8000.yml     TIMEOUT                        213.57      201.02        None
+lese10.yml                     false(unreach-call)             12.04        4.50        None
+lese100.yml                    false(unreach-call)             67.38       54.77        None
+lese1000.yml                   TIMEOUT                        226.89      201.01        None
+lese100000.yml                 TIMEOUT                        226.97      201.02        None
+lese250.yml                    TIMEOUT                        226.64      201.02        None
+lese2500.yml                   TIMEOUT                        227.01      201.02        None
+lese50.yml                     false(unreach-call)             20.36        9.87        None
+lese500.yml                    TIMEOUT                        225.93      201.02        None
+lese5000.yml                   TIMEOUT                        226.40      201.02        None
+lese8000.yml                   TIMEOUT                        227.28      201.01        None
+--------------------------------------------------------------------------------------------
+Run set 1                      done                           636.31     9045.49           -
+
+Statistics:             50 Files
+  correct:               7
+    correct true:        0
+    correct false:       7
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:              43
+  Score:                 7 (max: 50)

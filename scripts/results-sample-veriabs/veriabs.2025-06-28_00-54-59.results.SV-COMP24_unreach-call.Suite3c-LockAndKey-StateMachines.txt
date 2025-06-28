@@ -1,0 +1,53 @@
+   BENCHMARK INFORMATION
+benchmark definition:    benchmark-defs/veriabs.xml
+name:                    veriabs
+run sets:                SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines
+date:                    Sat, 2025-06-28 00:54:59 UTC
+tool:                    VeriAbs 1.5.1-2
+tool executable:         /gps-ae/VeriAbs/scripts/veriabs
+options:                 --sv22
+resource limits:
+- memory:                15000.0 MB
+- time:                  900 s
+- cpu cores:             8
+hardware requirements:
+- cpu model:             Intel Xeon E3-1230 v5 @ 3.40 GHz
+- cpu cores:             8
+- memory:                15000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ac8a6a12a11c
+os:                      Linux-6.8.0-60-generic-x86_64-with-glibc2.39
+cpu:                     13th Gen Intel Core i7-13700H
+- cores:                 20
+- max frequency:         4800.0 MHz
+- turbo boost enabled:   True
+ram:                     16421.941248 MB
+------------------------------------------------------------
+
+
+
+SV-COMP24_unreach-call.Suite3c-LockAndKey-StateMachines
+Run set 1 of 1 with options '--sv22' and propertyfile 'None'
+
+inputfile               status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------
+abracadabra.yml         false(unreach-call)             15.61        5.65        None
+abracadabraabra.yml     false(unreach-call)             15.58        5.71        None
+cadabra.yml             false(unreach-call)             15.40        5.69        None
+godefroid-ndss08.yml    false(unreach-call)             14.24        5.04        None
+gps-rc-ex.yml           false(unreach-call)             13.92        5.10        None
+majumdar-icse07.yml     false(unreach-call)             19.28        8.11        None
+-------------------------------------------------------------------------------------
+Run set 1               done                            93.96       35.91           -
+
+Statistics:              6 Files
+  correct:               6
+    correct true:        0
+    correct false:       6
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               0
+  Score:                 6 (max: 6)
